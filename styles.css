@@ -1,18 +1,16 @@
 /* Reset some default styles for better consistency */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
+/* ... (existing styles) ... */
 
+/* Additions for refined styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #1f2022; /* Background color */
-  color: #e0e0df; /* Text color */
+  background-color: #1f2022;
+  color: #e0e0df;
 }
 
 header {
-  background-color: #1f2022; /* Darken the header */
+  background-color: #1f2022;
   padding: 20px;
   text-align: center;
 }
@@ -20,46 +18,24 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Align items vertically */
+  align-items: center;
   position: relative;
-  background-color: #333; /* Dark background color for the navbar */
-  padding: 10px 20px; /* Adjust padding as needed */
   background-color: #1f2022;
+  padding: 10px 20px;
 }
 
 .navbar-img {
-  height: 100%; /* Set height to 100% */
-  display: flex; /* Use flexbox for image alignment */
-  align-items: center; /* Align images vertically */
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-img img {
-  max-width: 200px; /* Set max width to 200px */
-  height: auto; /* Allow the image to maintain its aspect ratio */
-}
-
-.logo img {
-  display: block;
-  margin: 0 auto;
-  max-width: 200px; /* Adjust the width of the logo */
+  max-width: 200px;
   height: auto;
 }
 
-nav ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #e0e0df; /* Text color */
-}
-
+/* Styling for sections, grids, images, about and contact sections */
 main {
   padding: 20px;
 }
@@ -68,36 +44,34 @@ section {
   margin-bottom: 40px;
 }
 
-footer {
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
   text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: #e0e0df; /* Text color */
 }
 
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust image size and spacing */
-  grid-gap: 20px; /* Adjust gap between images */
-  margin-top: 20px; /* Adjust margin as needed */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
 }
 
 .artwork {
   overflow: hidden;
-  border-radius: 8px; /* Rounded corners for images */
+  border-radius: 8px;
 }
 
 .artwork img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Rounded corners for images */
-  transition: transform 0.3s ease-in-out; /* Adding a transition effect */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .artwork img:hover {
-  transform: scale(0.95); /* Shrinking the image on hover */
+  transform: scale(0.95);
 }
-
 
 #about {
   text-align: center;
@@ -113,28 +87,38 @@ footer {
 }
 
 .about-image {
-  width: 200px; /* Adjust image container width */
-  height: 150px; /* Adjust image container height */
-  border-radius: 15px; /* Creating a rounded rectangle */
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .about-image img {
-  width: 100%; /* Adjust image size */
-  height: 100%; /* Adjust image size */
-  object-fit: cover; /* Maintain image aspect ratio */
-}
-
-.about-text {
-  margin-top: 20px; /* Adjust space between image and text */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-text p {
-  font-size: 16px; /* Adjust font size */
-  line-height: 1.6; /* Adjust line height */
-  color: #e0e0df; /* Text color */
-  max-width: 400px; /* Limit width of the text */
-  text-align: center; /* Center align the text */
-  margin: 0 auto; /* Center the text */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0df;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-info {
+  line-height: 1.6;
+  color: #e0e0df;
+}
+
+.contact-info a {
+  color: #e0e0df;
 }
