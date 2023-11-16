@@ -133,7 +133,7 @@ footer {
 .about-text p {
   font-size: 16px; /* Adjust font size */
   line-height: 1.6; /* Adjust line height */
-  color: #333; /* Text color */
+  color: #e0e0df; /* Text color */
   max-width: 400px; /* Limit width of the text */
   text-align: center; /* Center align the text */
   margin: 0 auto; /* Center the text */
