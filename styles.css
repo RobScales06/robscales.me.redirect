@@ -91,4 +91,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s ease-in-out; /* Adding a transition effect */
 }
+
+.artwork img:hover {
+  transform: scale(0.95); /* Shrinking the image on hover */
+}
+
