@@ -99,26 +99,42 @@ footer {
 }
 
 
+#about {
+  text-align: center;
+  padding: 50px 20px;
+}
+
 .about-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.about-image {
+  width: 200px; /* Adjust image container width */
+  height: 150px; /* Adjust image container height */
+  border-radius: 15px; /* Creating a rounded rectangle */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow */
 }
 
 .about-image img {
-  width: 200px; /* Adjust image size */
-  height: auto;
-  border-radius: 50%; /* Creating a circular shape */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow */
+  width: 100%; /* Adjust image size */
+  height: 100%; /* Adjust image size */
+  object-fit: cover; /* Maintain image aspect ratio */
 }
 
 .about-text {
-  margin-left: 30px; /* Adjust spacing between image and text */
+  margin-top: 20px; /* Adjust space between image and text */
 }
 
 .about-text p {
   font-size: 16px; /* Adjust font size */
   line-height: 1.6; /* Adjust line height */
   color: #333; /* Text color */
+  max-width: 400px; /* Limit width of the text */
+  text-align: center; /* Center align the text */
+  margin: 0 auto; /* Center the text */
 }
