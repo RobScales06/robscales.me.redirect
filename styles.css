@@ -20,9 +20,9 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Stretch the items vertically */
+  align-items: center; /* Align items vertically */
   position: relative;
-  background-color: #1f2022; /* Dark background color for the navbar */
+  background-color: #333; /* Dark background color for the navbar */
   padding: 10px 20px; /* Adjust padding as needed */
 }
 
@@ -33,8 +33,8 @@ header {
 }
 
 .navbar-img img {
-  width: auto; /* Ensure image width adjusts automatically */
-  height: 100%; /* Set image height to 100% */
+  max-width: 200px; /* Set max width to 200px */
+  height: auto; /* Allow the image to maintain its aspect ratio */
 }
 
 .logo img {
