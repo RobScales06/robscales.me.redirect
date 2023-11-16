@@ -22,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: stretch; /* Stretch the items vertically */
   position: relative;
-  background-color: #333; /* Dark background color for the navbar */
+  background-color: #1f2022; /* Dark background color for the navbar */
   padding: 10px 20px; /* Adjust padding as needed */
 }
 
