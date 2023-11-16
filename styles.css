@@ -20,20 +20,21 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch; /* Stretch the items vertically */
   position: relative;
   background-color: #333; /* Dark background color for the navbar */
   padding: 10px 20px; /* Adjust padding as needed */
 }
 
 .navbar-img {
-  width: 40px; /* Adjust the width as needed */
-  height: auto;
+  height: 100%; /* Set height to 100% */
+  display: flex; /* Use flexbox for image alignment */
+  align-items: center; /* Align images vertically */
 }
 
 .navbar-img img {
-  width: 100%;
-  height: auto;
+  width: auto; /* Ensure image width adjusts automatically */
+  height: 100%; /* Set image height to 100% */
 }
 
 .logo img {
