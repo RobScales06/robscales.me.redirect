@@ -20,6 +20,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  background-color: #000;
+  color: #ff0;
 }
 
 .navbar-img {
