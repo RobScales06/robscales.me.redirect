@@ -73,3 +73,21 @@ footer {
   background-color: #333;
   color: #e0e0df; /* Text color */
 }
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust image size and spacing */
+  grid-gap: 20px; /* Adjust gap between images */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.artwork {
+  overflow: hidden;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.artwork img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+}
