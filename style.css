@@ -527,34 +527,65 @@ video {
 }
 
 .navigation-container {
-	max-width: 80rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 2000;
+}
+
+.menu-toggle {
+	background: rgba(27, 27, 27, 0.9);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	cursor: pointer;
+	transition: all 0.2s;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-toggle:hover {
+	background: rgba(27, 27, 27, 1);
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	display: block;
 }
 
 .navigation-list {
+	display: none;
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	right: 0;
+	background: rgba(27, 27, 27, 0.95);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	min-width: 200px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0.25rem;
+	z-index: 2001;
+}
+
+.navigation-list.active {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1.5rem;
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
 }
 
 .navigation-link {
 	color: rgb(255 255 255 / 0.9);
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding: 0.75rem 1rem;
 	border-radius: 0.375rem;
 	outline: 2px solid transparent;
 	outline-offset: 2px;
+	width: 100%;
+	text-align: left;
 }
 
 .navigation-link:hover {
@@ -4281,8 +4312,8 @@ div.ex1 {
 }
 
 .tab.tab-active {
-	background-color: #0d94e6;
-	color: white;
+	background-color: #F5F1E8;
+	color: #0f1115;
 }
 
 .tab-container {

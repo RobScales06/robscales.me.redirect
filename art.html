@@ -12,14 +12,10 @@
       <link rel="stylesheet" href="./style.css">
    </head>
    <body id="ic9erg" class="gjs-t-body body">
-      <div id="iggb9xk" class="banner-container">
-         <div class="banner-row">
-            <div class="banner-left-image-wrap"><img alt="Left Banner Image" loading="eager" src="assets/images/left_image2.png" id="igciu-5" class="banner-left-image"/></div>
-            <div class="banner-center-logo-wrap"><img alt="Your Center Logo" loading="eager" src="assets/images/your_logo.png" id="ir5or-5" class="banner-center-logo"/></div>
-            <div class="banner-right-image-wrap"><img alt="Right Banner Image" loading="eager" src="assets/images/right_image2.png" id="ik1ik-5" class="banner-right-image"/></div>
-         </div>
-      </div>
       <div id="i1myuah" class="navigation-container">
+         <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <img src="https://api.iconify.design/lucide-menu.svg?color=white" alt="Menu" class="menu-icon"/>
+         </button>
          <ul id="i4jmnfk" class="navigation-list">
             <li><a href="index.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-home.svg?color=white" alt="Home Icon" class="navigation-icon"/><span>Home</span></a></li>
             <li><a href="art.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-palette.svg?color=white" alt="Art Icon" class="navigation-icon"/><span>Art</span></a></li>
@@ -28,6 +24,13 @@
             <li><a href="music.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-music-2.svg?color=white" alt="Music Icon" class="navigation-icon"/><span>Music</span></a></li>
             <li><a href="software-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-code-2.svg?color=white" alt="Software Icon" class="navigation-icon"/><span>Software</span></a></li>
          </ul>
+      </div>
+      <div id="iggb9xk" class="banner-container">
+         <div class="banner-row">
+            <div class="banner-left-image-wrap"><img alt="Left Banner Image" loading="eager" src="assets/images/left_image2.png" id="igciu-5" class="banner-left-image"/></div>
+            <div class="banner-center-logo-wrap"><img alt="Your Center Logo" loading="eager" src="assets/images/your_logo.png" id="ir5or-5" class="banner-center-logo"/></div>
+            <div class="banner-right-image-wrap"><img alt="Right Banner Image" loading="eager" src="assets/images/right_image2.png" id="ik1ik-5" class="banner-right-image"/></div>
+         </div>
       </div>
       <main id="iz43wi" class="main-content">
          <section id="ik7svu" class="hero-section">
@@ -602,6 +605,39 @@
                  var el = els[i];
                  (function(t){const n=this;let e=null;const r=()=>{e==null||e.disconnect(),e=null},i=()=>{r();const a=n.style;a.animationName="",requestAnimationFrame(()=>{const m=getComputedStyle(n),c=m.getPropertyValue("animation-name").trim(),l=m.getPropertyValue("--animation-on-scroll").trim()!=="false",f=parseFloat(m.getPropertyValue("--animation-threshold").trim())||.2,s=m.getPropertyValue("--animation-repeat").trim()==="true",o=()=>{a.animationName="none",n.offsetWidth,a.animationName=c,a.animationPlayState="running"};if(!c||c==="none"){a.animationName="none",a.animationPlayState="paused";return}if(!l){o();return}a.animationPlayState="paused",e=new IntersectionObserver(p=>{p.forEach(d=>{d.isIntersecting&&(o(),!s&&r())})},{threshold:f}),e.observe(n)})};n.addEventListener(t.animationUpdateEvent,i),i()}.bind(el))(props[el.id]);
                }
+      </script>
+      <script>
+         // Menu toggle functionality
+         const menuToggle = document.getElementById('menu-toggle');
+         const navList = document.getElementById('i4jmnfk');
+         
+         menuToggle.addEventListener('click', () => {
+           navList.classList.toggle('active');
+         });
+         
+         // Close menu when clicking outside
+         document.addEventListener('click', (e) => {
+           if (!menuToggle.contains(e.target) && !navList.contains(e.target)) {
+             navList.classList.remove('active');
+           }
+         });
+         
+         // Fade out banner on scroll
+         const banner = document.querySelector('.banner-container');
+         const fadeDistance = 300; // Distance in pixels to complete fade
+         
+         window.addEventListener('scroll', () => {
+           const scrollY = window.scrollY;
+           const opacity = Math.max(0, 1 - (scrollY / fadeDistance));
+           banner.style.opacity = opacity;
+           
+           // Hide completely and disable pointer events when fully transparent
+           if (opacity === 0) {
+             banner.style.pointerEvents = 'none';
+           } else {
+             banner.style.pointerEvents = 'auto';
+           }
+         });
       </script>
    </body>
 </html>
