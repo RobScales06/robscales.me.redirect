@@ -1,0 +1,39 @@
+name: Sync Gallery Data
+
+on:
+  push:
+    paths:
+      - 'assets/images/art-page-auto/**'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Run gallery sync script
+        run: node sync-gallery.js
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet gallery-data.json || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add gallery-data.json
+          git commit -m "🤖 Auto-sync gallery data [skip ci]"
+          git push

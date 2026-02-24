@@ -1,0 +1,13 @@
+{
+  "name": "art-portfolio-site",
+  "version": "1.0.0",
+  "description": "Portfolio site with auto-syncing art gallery",
+  "scripts": {
+    "sync-gallery": "node sync-gallery.js",
+    "dev": "python -m http.server 8000",
+    "dev:node": "npx http-server -p 8000 -o"
+  },
+  "keywords": ["portfolio", "art", "gallery"],
+  "author": "",
+  "license": "MIT"
+}

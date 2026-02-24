@@ -1,0 +1,482 @@
+{
+  "sections": [
+    {
+      "id": "clothing",
+      "label": "Clothing"
+    },
+    {
+      "id": "core-works",
+      "label": "Core Works"
+    },
+    {
+      "id": "digital",
+      "label": "Digital"
+    },
+    {
+      "id": "paintings",
+      "label": "Paintings"
+    },
+    {
+      "id": "portraits-and-figures",
+      "label": "Portraits And Figures"
+    }
+  ],
+  "artworks": [
+    {
+      "filename": "2d.jpg",
+      "path": "assets/images/art-page-auto/clothing/2d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "clothing"
+    },
+    {
+      "filename": "WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
+      "path": "assets/images/art-page-auto/clothing/WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "clothing"
+    },
+    {
+      "filename": "1-Gloss-600dpi-11x17.png",
+      "path": "assets/images/art-page-auto/core-works/1-Gloss-600dpi-11x17.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "1a.jpg",
+      "path": "assets/images/art-page-auto/core-works/1a.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "2-Gloss-600dpi-11x17.png",
+      "path": "assets/images/art-page-auto/core-works/2-Gloss-600dpi-11x17.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "2.jpg",
+      "path": "assets/images/art-page-auto/core-works/2.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "2a.jpg",
+      "path": "assets/images/art-page-auto/core-works/2a.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "2b.jpg",
+      "path": "assets/images/art-page-auto/core-works/2b.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "3-Gloss-600dpi-11x17.png",
+      "path": "assets/images/art-page-auto/core-works/3-Gloss-600dpi-11x17.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "3a.jpg",
+      "path": "assets/images/art-page-auto/core-works/3a.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "3b.png",
+      "path": "assets/images/art-page-auto/core-works/3b.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "3d.jpg",
+      "path": "assets/images/art-page-auto/core-works/3d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "4a.jpg",
+      "path": "assets/images/art-page-auto/core-works/4a.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "4b.jpg",
+      "path": "assets/images/art-page-auto/core-works/4b.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "4b1.jpg",
+      "path": "assets/images/art-page-auto/core-works/4b1.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "5b.jpg",
+      "path": "assets/images/art-page-auto/core-works/5b.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "6b.jpg",
+      "path": "assets/images/art-page-auto/core-works/6b.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "Macaw1.png",
+      "path": "assets/images/art-page-auto/core-works/Macaw1.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.13_1869a1e5.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.13_1869a1e5.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.31_2b724bc5.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_2b724bc5.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.31_6005827e.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_6005827e.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.31_9188d895.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_9188d895.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.31_aa205321.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_aa205321.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.32_be7ae832.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.32_be7ae832.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.32_e2988df4.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.32_e2988df4.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.34_0489c3cb.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.34_0489c3cb.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.34_a07130ee.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.34_a07130ee.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.34_e40b4fb5.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.34_e40b4fb5.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.35_152c5613.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.35_152c5613.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.35_4191779d.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.35_4191779d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.36_adc4aa77.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.36_adc4aa77.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.39_ce44676e.jpg",
+      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.39_ce44676e.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core-works"
+    },
+    {
+      "filename": "FLC0769.png",
+      "path": "assets/images/art-page-auto/digital/FLC0769.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "digital"
+    },
+    {
+      "filename": "FLC3031.png",
+      "path": "assets/images/art-page-auto/digital/FLC3031.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "digital"
+    },
+    {
+      "filename": "FLC4225.png",
+      "path": "assets/images/art-page-auto/digital/FLC4225.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "digital"
+    },
+    {
+      "filename": "_EMM_Idea_5.png",
+      "path": "assets/images/art-page-auto/digital/_EMM_Idea_5.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "digital"
+    },
+    {
+      "filename": "10c.jpg",
+      "path": "assets/images/art-page-auto/paintings/10c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "11c.jpg",
+      "path": "assets/images/art-page-auto/paintings/11c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "1c.jpg",
+      "path": "assets/images/art-page-auto/paintings/1c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "2c.jpg",
+      "path": "assets/images/art-page-auto/paintings/2c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "3c.jpg",
+      "path": "assets/images/art-page-auto/paintings/3c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "4c.jpg",
+      "path": "assets/images/art-page-auto/paintings/4c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "4d.jpg",
+      "path": "assets/images/art-page-auto/paintings/4d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "5c.jpg",
+      "path": "assets/images/art-page-auto/paintings/5c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "6c.jpg",
+      "path": "assets/images/art-page-auto/paintings/6c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "7c.jpg",
+      "path": "assets/images/art-page-auto/paintings/7c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "8c.jpg",
+      "path": "assets/images/art-page-auto/paintings/8c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "9c.jpg",
+      "path": "assets/images/art-page-auto/paintings/9c.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.29_ae4cb03d.jpg",
+      "path": "assets/images/art-page-auto/paintings/WhatsApp Image 2025-11-05 at 00.00.29_ae4cb03d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.30_6a594c19.jpg",
+      "path": "assets/images/art-page-auto/paintings/WhatsApp Image 2025-11-05 at 00.00.30_6a594c19.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.31_e1c88321.jpg",
+      "path": "assets/images/art-page-auto/paintings/WhatsApp Image 2025-11-05 at 00.00.31_e1c88321.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.35_872f669e.jpg",
+      "path": "assets/images/art-page-auto/paintings/WhatsApp Image 2025-11-05 at 00.00.35_872f669e.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.29_10ecc7ed.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/WhatsApp Image 2025-11-05 at 00.00.29_10ecc7ed.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.36_c7efe30e.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/WhatsApp Image 2025-11-05 at 00.00.36_c7efe30e.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.37_7a99b4ac.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/WhatsApp Image 2025-11-05 at 00.00.37_7a99b4ac.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.37_a64e3fb8.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/WhatsApp Image 2025-11-05 at 00.00.37_a64e3fb8.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "WhatsApp Image 2025-11-05 at 00.00.38_effcfce3.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/WhatsApp Image 2025-11-05 at 00.00.38_effcfce3.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "portraits-and-figures"
+    }
+  ]
+}
