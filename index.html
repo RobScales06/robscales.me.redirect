@@ -29,6 +29,9 @@
          </div>
          <nav class="primary-navigation">
             <div id="ickc6" class="navigation-container">
+               <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                  <img src="https://api.iconify.design/lucide-menu.svg?color=white" alt="Menu" class="menu-icon"/>
+               </button>
                <ul id="ikier" class="navigation-list">
                   <li><a href="index.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-home.svg?color=white" alt="Home Icon" class="navigation-icon"/><span>Home</span></a></li>
                   <li id="i8wsv"><a href="art.html" id="i82lf" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-palette.svg?color=white" alt="Art Icon" id="iubfu" class="navigation-icon"/><span id="iz10i">Art</span></a></li>
@@ -49,53 +52,13 @@
                      <p class="home-paragraph">I am an artist, animator, game developer, musician, and software engineer. I build cohesive experiences across visual art and interactive systems. This portfolio collects selected works and projects—ranging from mural commissions and animated shorts to indie game prototypes, original music, and software.</p>
                      <div class="home-actions"><a href="art.html" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-palette.svg?color=#0f1115" alt="Palette" class="button-icon"/><span>Explore Art</span></a><a href="#contact" class="secondary-button"><img src="https://api.iconify.design/lucide-mail.svg?color=white" alt="Mail" class="button-icon"/><span>Get In Touch</span></a></div>
                   </div>
-                  <div class="home-preview-column">
-                     <div class="\1">
-                        <div class="preview-card">
-                           <img src="assets\images\4a.jpg" alt="Art Preview" loading="eager" class="preview-image"/>
-                           <div class="preview-text">
-                              <p class="preview-label">Illustration</p>
-                           </div>
-                        </div>
-                        <div class="preview-card">
-                           <img src="assets\images\animation\FLC4225.png" alt="Animation Preview" loading="eager" class="preview-image"/>
-                           <div class="preview-text">
-                              <p class="preview-label">Animation</p>
-                           </div>
-                        </div>
-                        <div class="preview-card">
-                           <img src="assets\images\4a.png?query=%22indie%20game%22&amp;w=460&amp;h=300" alt="Game Dev Preview" loading="eager" class="preview-image"/>
-                           <div class="preview-text">
-                              <p class="preview-label">Game Dev</p>
-                           </div>
-                        </div>
-                        <div class="preview-card">
-                           <img src="https://app.grapesjs.com/api/assets/random-image?query=%22music%20producer%22&amp;w=460&amp;h=300" alt="Music Preview" loading="eager" class="preview-image"/>
-                           <div class="preview-text">
-                              <p class="preview-label">Music</p>
-                           </div>
-                        </div>
-                        <div class="preview-card">
-                           <img src="https://app.grapesjs.com/api/assets/random-image?query=%22software%20development%22&amp;w=460&amp;h=300" alt="Software Preview" loading="eager" class="preview-image"/>
-                           <div class="preview-text">
-                              <p class="preview-label">Software</p>
-                           </div>
-                        </div>
-                        <div class="preview-card">
-                           <img src="https://app.grapesjs.com/api/assets/random-image?query=%22digital%20art%22&amp;w=460&amp;h=300" alt="Digital Art Preview" loading="eager" class="preview-image"/>
-                           <div class="preview-text">
-                              <p class="preview-label">Digital Art</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                </div>
                <div class="home-highlights">
                   <h2 class="gjs-t-h2">Explore the Portfolio</h2>
                   <p class="home-paragraph">Short previews of each discipline. Visit each section for the full collection.</p>
                   <div class="preview-grid">
                      <a href="art.html" class="preview-card">
-                        <img src="https://app.grapesjs.com/api/assets/random-image?query=%22fine%20art%22&amp;w=460&amp;h=300" alt="Art Preview" loading="eager" class="preview-image"/>
+                        <img src="assets\images\3a.jpg" alt="Art Preview" loading="eager" class="preview-image"/>
                         <div class="preview-text">
                            <p class="preview-label">Art — Illustrations, murals, and studies</p>
                         </div>
@@ -107,19 +70,19 @@
                         </div>
                      </a>
                      <a href="game-development.html" class="preview-card">
-                        <img src="https://app.grapesjs.com/api/assets/random-image?query=%22game%20prototype%22&amp;w=460&amp;h=300" alt="Game Development Preview" loading="eager" class="preview-image"/>
+                        <img src="assets\images\game\PopBois2.png" alt="Game Development Preview" loading="eager" class="preview-image"/>
                         <div class="preview-text">
                            <p class="preview-label">Games — Mechanics, prototypes, and builds</p>
                         </div>
                      </a>
                      <a href="music.html" class="preview-card">
-                        <img src="https://app.grapesjs.com/api/assets/random-image?query=%22music%20studio%22&amp;w=460&amp;h=300" alt="Music Preview" loading="eager" class="preview-image"/>
+                        <img src="assets\images\music\DJ_pic.png" alt="Music Preview" loading="eager" class="preview-image"/>
                         <div class="preview-text">
                            <p class="preview-label">Music — Original tracks and score sketches</p>
                         </div>
                      </a>
                      <a href="software-development.html" class="preview-card">
-                        <img src="https://app.grapesjs.com/api/assets/random-image?query=%22software%20ui%22&amp;w=460&amp;h=300" alt="Software Preview" loading="eager" class="preview-image"/>
+                        <img src="assets\images\code\code1.png" alt="Software Preview" loading="eager" class="preview-image"/>
                         <div class="preview-text">
                            <p class="preview-label">Software — Apps, tools, and libraries</p>
                         </div>
@@ -141,5 +104,38 @@
             </div>
          </div>
       </footer>
+      <script>
+         // Menu toggle functionality
+         const menuToggle = document.getElementById('menu-toggle');
+         const navList = document.getElementById('ikier');
+         
+         menuToggle.addEventListener('click', () => {
+           navList.classList.toggle('active');
+         });
+         
+         // Close menu when clicking outside
+         document.addEventListener('click', (e) => {
+           if (!menuToggle.contains(e.target) && !navList.contains(e.target)) {
+             navList.classList.remove('active');
+           }
+         });
+         
+         // Fade out banner on scroll
+         const banner = document.querySelector('.banner-container');
+         const fadeDistance = 300; // Distance in pixels to complete fade
+         
+         window.addEventListener('scroll', () => {
+           const scrollY = window.scrollY;
+           const opacity = Math.max(0, 1 - (scrollY / fadeDistance));
+           banner.style.opacity = opacity;
+           
+           // Hide completely and disable pointer events when fully transparent
+           if (opacity === 0) {
+             banner.style.pointerEvents = 'none';
+           } else {
+             banner.style.pointerEvents = 'auto';
+           }
+         });
+      </script>
    </body>
 </html>
