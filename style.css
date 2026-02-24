@@ -77,6 +77,7 @@
 	transition-property: opacity;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
+	pointer-events: none;
 }
 
 .artwork-card {
@@ -127,6 +128,7 @@
 	transition-property: opacity;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
+	pointer-events: none;
 }
 
 * {
@@ -156,21 +158,23 @@ html {
 	color: #f8fafc;
 	font-size: 16px;
 	line-height: 1.7;
-	font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 .gjs-t-h1 {
 	color: #ffffff;
 	font-size: 42px;
 	line-height: 1.2;
-	font-family: "Poppins", "Inter", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
 }
 
 .gjs-t-h2 {
 	color: #ffffff;
 	font-size: 28px;
 	line-height: 1.3;
-	font-family: "Poppins", "Inter", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
 }
 
 .gjs-t-button {
@@ -453,13 +457,13 @@ video {
 }
 
 .banner-container {
-	max-width: 80rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: linear-gradient(to bottom, rgba(27, 27, 27, 0.95), rgba(27, 27, 27, 0));
+	padding: 1.5rem 2rem;
 }
 
 .banner-row {
@@ -477,8 +481,8 @@ video {
 
 .banner-left-image {
 	height: 6rem;
-	width: auto;
-	object-fit: cover;
+	width: 6rem;
+	object-fit: contain;
 	border-radius: 0.375rem;
 	border-width: 0px;
 	box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -492,7 +496,7 @@ video {
 
 .banner-center-logo {
 	height: 6rem;
-	width: auto;
+	width: 6rem;
 	object-fit: contain;
 	border-radius: 0.375rem;
 	border-width: 0px;
@@ -505,8 +509,8 @@ video {
 
 .banner-right-image {
 	height: 6rem;
-	width: auto;
-	object-fit: cover;
+	width: 6rem;
+	object-fit: contain;
 	border-radius: 0.375rem;
 	border-width: 0px;
 	box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -578,6 +582,7 @@ video {
 	margin-right: auto;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+	padding-top: 10rem;
 }
 
 .home-section {
