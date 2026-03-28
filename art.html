@@ -10,6 +10,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="./style.css">
+      <script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; window.scrollTo(0, 0);</script>
    </head>
    <body id="ic9erg" class="gjs-t-body body">
       <div id="i1myuah" class="navigation-container">
@@ -39,6 +40,30 @@
                   <h1 class="gjs-t-h1 hero-title">Artwork</h1>
                   <p class="hero-subtitle">Below is a collection of visual artworks I've created for a range of personal and professional purposes. I have created works for commercial, non-profit, and gallery settings, as well as works in clothing.</p>
                </div>
+         </section>
+         <section id="featured-projects-section" class="featured-projects-section" hidden>
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Featured Projects</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-star.svg?color=%2394a3b8" alt="Projects Icon" class="icon-images"/><span id="featured-project-count">0 projects</span></div>
+            </div>
+            <div class="featured-project-carousel">
+               <button type="button" id="featured-project-prev" class="project-nav project-nav-prev" aria-label="Previous project"><img src="https://api.iconify.design/lucide-chevron-left.svg?color=%23f8fafc" alt="Previous"/></button>
+               <div class="featured-project-main">
+                  <div class="featured-project-image-shell">
+                     <img id="featured-project-image" class="featured-project-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+" alt="Featured project image"/>
+                  </div>
+                  <div class="featured-project-info">
+                     <h3 id="featured-project-title" class="featured-project-title">Project</h3>
+                     <p id="featured-project-description" class="featured-project-description"></p>
+                     <p id="featured-project-medium" class="featured-project-medium"></p>
+                     <span id="featured-project-year" class="featured-project-year" hidden></span>
+                     <a id="featured-project-cta" class="featured-project-cta" href="#" hidden>View Project</a>
+                  </div>
+                  <div id="featured-project-thumbs" class="featured-project-thumbs"></div>
+               </div>
+               <button type="button" id="featured-project-next" class="project-nav project-nav-next" aria-label="Next project"><img src="https://api.iconify.design/lucide-chevron-right.svg?color=%23f8fafc" alt="Next"/></button>
+            </div>
+            <div id="featured-project-indicators" class="featured-project-indicators" aria-label="Project list"></div>
          </section>
          <section id="gallery-2" class="gallery-section">
             <div id="i8z5v3" class="gallery-header">
@@ -234,8 +259,292 @@
                return;
              }
              
-             // Update artwork count
-             document.getElementById('artwork-count').textContent = `${data.artworks.length} works`;
+                   const sectionLookup = new Map((data.sections || []).map(section => [section.id, section.label]));
+                   const normalizedArtworks = data.artworks.map(artwork => ({
+                      ...artwork,
+                      sectionLabel: sectionLookup.get(artwork.section) || artwork.section
+                   }));
+                const galleryArtworks = normalizedArtworks.filter(artwork => artwork.showInGallery !== false && artwork.hideFromGrid !== true);
+
+             // Update artwork count for public grid visibility
+             document.getElementById('artwork-count').textContent = `${galleryArtworks.length} works`;
+
+                   const renderFeaturedProjects = () => {
+                      const sectionEl = document.getElementById('featured-projects-section');
+                      const countEl = document.getElementById('featured-project-count');
+                      const indicatorEl = document.getElementById('featured-project-indicators');
+                      const mainImgEl = document.getElementById('featured-project-image');
+                      const titleEl = document.getElementById('featured-project-title');
+                      const descEl = document.getElementById('featured-project-description');
+                      const mediumEl = document.getElementById('featured-project-medium');
+                      const yearEl = document.getElementById('featured-project-year');
+                      const ctaEl = document.getElementById('featured-project-cta');
+                      const thumbsEl = document.getElementById('featured-project-thumbs');
+                      const mainContainerEl = sectionEl.querySelector('.featured-project-main');
+                      const prevBtn = document.getElementById('featured-project-prev');
+                      const nextBtn = document.getElementById('featured-project-next');
+
+                      const artworksByPath = new Map(normalizedArtworks.map(art => [art.path, art]));
+
+                      const explicitProjects = Array.isArray(data.projects) ? data.projects.map(project => {
+                         const imagePaths = Array.isArray(project.imagePaths) ? project.imagePaths : [];
+                         const images = imagePaths
+                            .map(path => artworksByPath.get(path))
+                            .filter(Boolean);
+
+                         return {
+                            id: project.id || project.title || '',
+                            title: project.title || '',
+                            description: project.description || '',
+                            medium: project.medium || '',
+                            ctaUrl: project.ctaUrl || '',
+                            ctaLabel: project.ctaLabel || 'View Project',
+                            ctaNewTab: project.ctaNewTab !== false,
+                            year: Number.isInteger(project.year) ? project.year : null,
+                            images,
+                            coverIndex: Number.isInteger(project.coverIndex) ? project.coverIndex : 0
+                         };
+                      }).filter(project => project.images.length > 0) : [];
+
+                      const fallbackProjects = (() => {
+                         const buckets = new Map();
+                         normalizedArtworks.forEach(artwork => {
+                            const title = (artwork.title || '').trim();
+                            const description = (artwork.description || '').trim();
+                            if (!title || !description) return;
+                            const medium = (artwork.medium || '').trim();
+                            const key = `${title}|||${description}|||${medium}`;
+                            if (!buckets.has(key)) buckets.set(key, []);
+                            buckets.get(key).push(artwork);
+                         });
+
+                         return Array.from(buckets.entries())
+                            .filter(([, images]) => images.length >= 2)
+                            .map(([key, images]) => {
+                               const [title, description, medium] = key.split('|||');
+                               return {
+                                  id: title,
+                                  title,
+                                  description,
+                                  medium,
+                                  ctaUrl: '',
+                                  ctaLabel: 'View Project',
+                                  ctaNewTab: true,
+                                  images,
+                                  coverIndex: 0
+                               };
+                            });
+                      })();
+
+                      const projects = explicitProjects.length > 0 ? explicitProjects : fallbackProjects;
+                      if (!projects.length) {
+                         sectionEl.hidden = true;
+                         return;
+                      }
+
+                      const carouselConfig = {
+                         autoplay: !(data.projectCarousel && data.projectCarousel.autoplay === false),
+                         intervalMs: (data.projectCarousel && Number.isFinite(data.projectCarousel.intervalMs) && data.projectCarousel.intervalMs >= 2500) ? data.projectCarousel.intervalMs : 6500
+                      };
+
+                      sectionEl.hidden = false;
+                      countEl.textContent = `${projects.length} project${projects.length === 1 ? '' : 's'}`;
+
+                      let projectIndex = 0;
+                      let imageIndex = 0;
+                      let autoplayTimer = null;
+                      let fadeTimer = null;
+                      let isUserInteracting = false;
+                      const fadeDurationMs = 220;
+                      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                      const stopAutoplay = () => {
+                         if (autoplayTimer) {
+                            window.clearInterval(autoplayTimer);
+                            autoplayTimer = null;
+                         }
+                      };
+
+                      const nextProject = () => {
+                         projectIndex = (projectIndex + 1) % projects.length;
+                         imageIndex = projects[projectIndex].coverIndex || 0;
+                         renderProject({ animate: true });
+                      };
+
+                      const startAutoplay = () => {
+                         stopAutoplay();
+                         if (!carouselConfig.autoplay || projects.length < 2 || isUserInteracting || document.hidden || prefersReducedMotion) {
+                            return;
+                         }
+                         autoplayTimer = window.setInterval(() => {
+                            if (!isUserInteracting && !document.hidden) {
+                              nextProject();
+                            }
+                         }, carouselConfig.intervalMs);
+                      };
+
+                      const applyProjectState = () => {
+                         const project = projects[projectIndex];
+                         const safeIndex = Math.max(0, Math.min(imageIndex, project.images.length - 1));
+                         imageIndex = safeIndex;
+                         const activeImage = project.images[imageIndex];
+
+                         titleEl.textContent = project.title || 'Featured Project';
+                         descEl.textContent = project.description || '';
+                         descEl.hidden = !project.description;
+                         mediumEl.textContent = project.medium || '';
+                         mediumEl.hidden = !project.medium;
+                         yearEl.textContent = project.year ? String(project.year) : '';
+                         yearEl.hidden = !project.year;
+
+                         if (project.ctaUrl) {
+                            ctaEl.href = project.ctaUrl;
+                            ctaEl.textContent = project.ctaLabel || 'View Project';
+                            if (project.ctaNewTab) {
+                               ctaEl.target = '_blank';
+                               ctaEl.rel = 'noopener noreferrer';
+                            } else {
+                               ctaEl.removeAttribute('target');
+                               ctaEl.removeAttribute('rel');
+                            }
+                            ctaEl.hidden = false;
+                         } else {
+                            ctaEl.hidden = true;
+                            ctaEl.removeAttribute('href');
+                            ctaEl.removeAttribute('target');
+                            ctaEl.removeAttribute('rel');
+                         }
+
+                         mainImgEl.src = activeImage.path;
+                         mainImgEl.alt = project.title || 'Featured project image';
+
+                         thumbsEl.innerHTML = '';
+                         project.images.forEach((image, idx) => {
+                            const thumb = document.createElement('button');
+                            thumb.type = 'button';
+                            thumb.className = `featured-project-thumb${idx === imageIndex ? ' is-active' : ''}`;
+                            thumb.setAttribute('aria-label', `Show image ${idx + 1} for ${project.title || 'project'}`);
+
+                            const thumbImg = document.createElement('img');
+                            thumbImg.src = image.path;
+                            thumbImg.alt = image.title || `Project image ${idx + 1}`;
+                            thumbImg.loading = 'lazy';
+
+                            thumb.appendChild(thumbImg);
+                            thumb.addEventListener('click', () => {
+                               imageIndex = idx;
+                               renderProject({ animate: true, imageOnly: true });
+                            });
+                            thumbsEl.appendChild(thumb);
+                         });
+
+                         indicatorEl.innerHTML = '';
+                         projects.forEach((projectItem, idx) => {
+                            const indicator = document.createElement('button');
+                            indicator.type = 'button';
+                            indicator.className = `featured-project-indicator${idx === projectIndex ? ' is-active' : ''}`;
+                            indicator.textContent = projectItem.title || `Project ${idx + 1}`;
+                            indicator.setAttribute('aria-label', `View ${projectItem.title || `Project ${idx + 1}`}`);
+                            indicator.addEventListener('click', () => {
+                               projectIndex = idx;
+                               imageIndex = projects[projectIndex].coverIndex || 0;
+                               renderProject({ animate: true });
+                               startAutoplay();
+                            });
+                            indicatorEl.appendChild(indicator);
+                         });
+                      };
+
+                      const imageShellEl = sectionEl.querySelector('.featured-project-image-shell');
+
+                      const renderProject = ({ animate = false, imageOnly = false } = {}) => {
+                         if (!animate || prefersReducedMotion) {
+                            applyProjectState();
+                            return;
+                         }
+
+                         if (fadeTimer) {
+                            window.clearTimeout(fadeTimer);
+                            fadeTimer = null;
+                         }
+
+                         const fadeEl = imageOnly ? imageShellEl : mainContainerEl;
+                         fadeEl.classList.add('is-fading');
+                         fadeTimer = window.setTimeout(() => {
+                            applyProjectState();
+                            requestAnimationFrame(() => {
+                              fadeEl.classList.remove('is-fading');
+                            });
+                            fadeTimer = null;
+                         }, fadeDurationMs);
+                      };
+
+                      prevBtn.addEventListener('click', () => {
+                         projectIndex = (projectIndex - 1 + projects.length) % projects.length;
+                         imageIndex = projects[projectIndex].coverIndex || 0;
+                         renderProject({ animate: true });
+                         startAutoplay();
+                      });
+
+                      nextBtn.addEventListener('click', () => {
+                         nextProject();
+                         startAutoplay();
+                      });
+
+                      mainImgEl.addEventListener('click', () => {
+                         const project = projects[projectIndex];
+                         artLightbox.open(project.images, imageIndex);
+                      });
+
+                      mainImgEl.addEventListener('keydown', (event) => {
+                         if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            const project = projects[projectIndex];
+                            artLightbox.open(project.images, imageIndex);
+                         }
+                      });
+
+                      mainImgEl.tabIndex = 0;
+                      mainImgEl.setAttribute('role', 'button');
+                      mainImgEl.setAttribute('aria-label', 'Open featured project image in full view');
+
+                      sectionEl.addEventListener('mouseenter', () => {
+                         isUserInteracting = true;
+                         stopAutoplay();
+                      });
+                      sectionEl.addEventListener('mouseleave', () => {
+                         isUserInteracting = false;
+                         startAutoplay();
+                      });
+                      sectionEl.addEventListener('focusin', () => {
+                         isUserInteracting = true;
+                         stopAutoplay();
+                      });
+                      sectionEl.addEventListener('focusout', () => {
+                         isUserInteracting = sectionEl.contains(document.activeElement);
+                         if (!isUserInteracting) {
+                           startAutoplay();
+                         }
+                      });
+                      document.addEventListener('visibilitychange', () => {
+                         if (document.hidden) {
+                           stopAutoplay();
+                         } else {
+                           startAutoplay();
+                         }
+                      });
+
+                      imageIndex = projects[0].coverIndex || 0;
+                      renderProject();
+                      startAutoplay();
+                   };
+
+                   renderFeaturedProjects();
+
+                   if (galleryArtworks.length === 0) {
+                      document.getElementById('artwork-count').textContent = 'No public artworks yet';
+                      return;
+                   }
              
              // Generate tabs
              const tabsContainer = document.getElementById('dynamic-tabs');
@@ -245,25 +554,16 @@
                    const tabsData = [{
                       id: 'all',
                       label: 'All',
-                      artworks: data.artworks.map(artwork => {
-                         const matchedSection = (data.sections || []).find(section => section.id === artwork.section);
-                         return {
-                            ...artwork,
-                            sectionLabel: matchedSection ? matchedSection.label : artwork.section
-                         };
-                      })
+                                 artworks: galleryArtworks
                    }];
 
              (data.sections || []).forEach(section => {
-               const sectionArtworks = data.artworks.filter(art => art.section === section.id);
+                      const sectionArtworks = galleryArtworks.filter(art => art.section === section.id);
                if (sectionArtworks.length === 0) return; // Skip empty sections
                       tabsData.push({
                          id: section.id,
                          label: section.label,
-                         artworks: sectionArtworks.map(artwork => ({
-                            ...artwork,
-                            sectionLabel: section.label
-                         }))
+                                     artworks: sectionArtworks
                       });
              });
 
@@ -324,6 +624,10 @@
                          if (showTitle && rawMedium) {
                    captionText += (captionText ? ' - ' : '') + artwork.medium;
                  }
+                         const rawYear = artwork.year ? String(artwork.year) : '';
+                         if (rawYear) {
+                            captionText += (captionText ? ' · ' : '') + rawYear;
+                         }
                  caption.textContent = captionText;
                          caption.hidden = !captionText;
                  

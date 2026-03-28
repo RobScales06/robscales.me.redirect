@@ -31,6 +31,50 @@
       "section": "clothing"
     },
     {
+      "filename": "abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "path": "assets/images/art-page-auto/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "path": "assets/images/art-page-auto/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "path": "assets/images/art-page-auto/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
+      "path": "assets/images/art-page-auto/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
       "filename": "IMG_20260103_060004_104.jpg",
       "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_104.jpg",
       "title": "",
@@ -76,6 +120,28 @@
       "title": "",
       "medium": "",
       "description": "",
+      "section": "clothing"
+    },
+    {
+      "filename": "lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg",
+      "path": "assets/images/art-page-auto/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg",
+      "path": "assets/images/art-page-auto/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
       "section": "clothing"
     },
     {
@@ -199,6 +265,26 @@
       "section": "core"
     },
     {
+      "filename": "Are_You_Dreaming_Draft_1 (5).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (5).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "Are_You_Dreaming_Draft_1 (6).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (6).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
       "filename": "GFG_Close.jpg",
       "path": "assets/images/art-page-auto/core/GFG_Close.jpg",
       "title": "Work for GFG Café",
@@ -315,6 +401,16 @@
       "section": "core"
     },
     {
+      "filename": "EMM_Idea_5.png",
+      "path": "assets/images/art-page-auto/digital/EMM_Idea_5.png",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "digital"
+    },
+    {
       "filename": "FLC0769.png",
       "path": "assets/images/art-page-auto/digital/FLC0769.png",
       "title": "",
@@ -333,14 +429,6 @@
     {
       "filename": "FLC4225.png",
       "path": "assets/images/art-page-auto/digital/FLC4225.png",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "digital"
-    },
-    {
-      "filename": "_EMM_Idea_5.png",
-      "path": "assets/images/art-page-auto/digital/_EMM_Idea_5.png",
       "title": "",
       "medium": "",
       "description": "",
@@ -515,5 +603,120 @@
       "section": "portraits-and-figures"
     }
   ],
-  "archivedArtworks": []
+  "projects": [
+    {
+      "id": "are-you-dreaming-debut-album-cover",
+      "title": "Are You Dreaming? Debut Album Cover Commission",
+      "year": 2026,
+      "medium": "Acrylic",
+      "description": "Album Cover for the Debut Self-Titled Album of Philadelphia Band \"Are You Dreaming?\"",
+      "imagePaths": [
+        "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (5).jpeg",
+        "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (6).jpeg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "gfg-cafe-mural",
+      "title": "Work for GFG Cafe",
+      "year": 2024,
+      "medium": "Acrylic",
+      "description": "Commission for Greek From Greece Cafe in University City",
+      "imagePaths": [
+        "assets/images/art-page-auto/core/GFG_Close.jpg",
+        "assets/images/art-page-auto/core/GFG_Far.jpg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "digital-clothing-store",
+      "title": "Digital Clothing Store",
+      "year": 2024,
+      "medium": "Digital",
+      "description": "A small online store created for original digital designs themed around Honduran and Philadelphian culture",
+      "link": "https://rsa-canvas-store.printify.me/",
+      "imagePaths": [
+        "assets/images/art-page-auto/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+        "assets/images/art-page-auto/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+        "assets/images/art-page-auto/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+        "assets/images/art-page-auto/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
+        "assets/images/art-page-auto/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg",
+        "assets/images/art-page-auto/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "cads-exhibition",
+      "title": "CADS Visual and Applied Arts Exhibition",
+      "year": 2023,
+      "medium": "Mixed Media",
+      "description": "Multidisciplinary submissions for CADS Visual and Applied Arts Showcase including 2 printed digital art pieces and 3 original paintings displayed for the visual arts portion, as well as a sculpture (clay on plastic) and shoes with hand-drawn designs presented in the Applied Arts portion. Digital Animations were also submitted to be displayed on the large display. The opening took Place at Drexel University over two days.",
+      "imagePaths": [
+        "assets/images/art-page-auto/paintings/2c.jpg",
+        "assets/images/art-page-auto/core/3d.jpg",
+        "assets/images/art-page-auto/clothing/2d.jpg"
+      ],
+      "coverIndex": 0
+    }
+  ],
+  "archivedArtworks": [
+    {
+      "filename": "_EMM_Idea_5.png",
+      "path": "assets/images/art-page-auto/digital/_EMM_Idea_5.png",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "digital"
+    },
+    {
+      "filename": "Are_You_Dreaming_Draft_1 (1).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (1).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "Are_You_Dreaming_Draft_1 (3).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (3).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "Are_You_Dreaming_Draft_1 (2).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (2).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "Are_You_Dreaming_Draft_1 (4).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (4).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "Are_You_Dreaming_Draft_1 (7).jpeg",
+      "path": "assets/images/art-page-auto/core/Are_You_Dreaming_Draft_1 (7).jpeg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    }
+  ]
 }

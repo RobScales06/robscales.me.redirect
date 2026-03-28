@@ -84,7 +84,7 @@ function scanGalleryFolder() {
  */
 function loadGalleryData() {
   if (!fs.existsSync(DATA_FILE)) {
-    return { sections: [], artworks: [], archivedArtworks: [] };
+    return { sections: [], artworks: [], projects: [], archivedArtworks: [] };
   }
 
   try {
@@ -93,11 +93,12 @@ function loadGalleryData() {
     return {
       sections: Array.isArray(parsed.sections) ? parsed.sections : [],
       artworks: Array.isArray(parsed.artworks) ? parsed.artworks : [],
+      projects: Array.isArray(parsed.projects) ? parsed.projects : [],
       archivedArtworks: Array.isArray(parsed.archivedArtworks) ? parsed.archivedArtworks : []
     };
   } catch (error) {
     console.error('Error reading gallery data:', error);
-    return { sections: [], artworks: [], archivedArtworks: [] };
+    return { sections: [], artworks: [], projects: [], archivedArtworks: [] };
   }
 }
 
@@ -108,6 +109,7 @@ function mergeGalleryData(existing, scanned) {
   const merged = {
     sections: [...scanned.sections],
     artworks: [],
+    projects: Array.isArray(existing.projects) ? existing.projects : [],
     archivedArtworks: []
   };
 
@@ -149,6 +151,7 @@ function mergeGalleryData(existing, scanned) {
         path: image.relativePath,
         title: '',
         displayTitle: true,
+        showInGallery: true,
         medium: '',
         description: '',
         displayDescription: true,

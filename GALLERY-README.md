@@ -76,14 +76,78 @@ After sync, edit `gallery-data.json` to add details:
 
 - `displayTitle`: if `false`, caption title/medium are hidden for that artwork
 - `displayDescription`: if `false`, the lightbox description is hidden
+- `showInGallery`: if `false`, artwork is hidden from the main tabs/grid but can still be used in `projects.imagePaths`
+- `hideFromGrid`: legacy alias for the same behavior (`true` hides it)
 
 Both flags default to `true` for newly added artworks.
+
+Example hidden-from-grid artwork:
+
+```json
+{
+  "filename": "project-detail-shot.jpg",
+  "path": "assets/images/art-page-auto/core/project-detail-shot.jpg",
+  "title": "Detail Shot",
+  "showInGallery": false,
+  "section": "core"
+}
+```
 
 Recommended workflow:
 
 1. Keep metadata in JSON for long-term organization
 2. Use visibility flags to control what appears publicly
 3. Avoid filename-based display rules to keep auto-sync simple and predictable
+
+## 🌟 Featured Projects Carousel
+
+You can optionally define `projects` in `gallery-data.json` to show highlighted project work before the full collection.
+
+Example:
+
+```json
+{
+  "projects": [
+    {
+      "id": "gfg-cafe-mural",
+      "title": "Work for GFG Cafe",
+      "medium": "Acrylic",
+      "description": "Commission for Greek From Greece Cafe in University City",
+      "ctaUrl": "https://example.com/project-details",
+      "ctaLabel": "See Case Study",
+      "ctaNewTab": true,
+      "imagePaths": [
+        "assets/images/art-page-auto/core/GFG_Close.jpg",
+        "assets/images/art-page-auto/core/GFG_Far.jpg"
+      ],
+      "coverIndex": 0
+    }
+  ]
+}
+```
+
+Notes:
+
+- `imagePaths` must match artwork paths from `artworks`.
+- `projects` is preserved by sync and is not auto-generated.
+- Project order follows the JSON array order (no auto-sort).
+- `ctaUrl`, `ctaLabel`, and `ctaNewTab` are optional; if omitted, no CTA button is shown.
+- If no explicit `projects` are defined, the site falls back to grouping repeated titled/described works (like your GFG example).
+
+Optional carousel behavior settings:
+
+```json
+{
+  "projectCarousel": {
+    "autoplay": true,
+    "intervalMs": 6500
+  }
+}
+```
+
+- `autoplay`: set `false` to disable automatic project rotation.
+- `intervalMs`: rotation interval in milliseconds (minimum effective value is 2500).
+- The carousel pauses while users hover/focus it, and respects reduced motion preferences.
 
 ## ✨ Features
 
