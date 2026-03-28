@@ -827,6 +827,45 @@
       "thumbnailPath": "assets/images/art-page-previews/core/WhatsApp Image 2025-11-05 at 00.00.39_ce44676e.jpg.thumb.webp"
     },
     {
+      "filename": "WhatsApp Image 2026-03-28 at 4.30.25 AM.jpeg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2026-03-28 at 4.30.25 AM.jpeg",
+      "previewPath": "assets/images/art-page-previews/core/WhatsApp Image 2026-03-28 at 4.30.25 AM.jpeg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/core/WhatsApp Image 2026-03-28 at 4.30.25 AM.jpeg.thumb.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "WhatsApp Image 2026-03-28 at 4.30.25 AM2.jpeg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2026-03-28 at 4.30.25 AM2.jpeg",
+      "previewPath": "assets/images/art-page-previews/core/WhatsApp Image 2026-03-28 at 4.30.25 AM2.jpeg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/core/WhatsApp Image 2026-03-28 at 4.30.25 AM2.jpeg.thumb.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "WhatsApp Image 2026-03-28 at 4.55.58 AM.jpeg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2026-03-28 at 4.55.58 AM.jpeg",
+      "previewPath": "assets/images/art-page-previews/core/WhatsApp Image 2026-03-28 at 4.55.58 AM.jpeg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/core/WhatsApp Image 2026-03-28 at 4.55.58 AM.jpeg.thumb.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
       "filename": "2019-03-10_09-53-27_UTC.jpg",
       "path": "assets/images/art-page-auto/digital/2019-03-10_09-53-27_UTC.jpg",
       "title": "",
@@ -2430,10 +2469,10 @@
     },
     {
       "id": "gfg-cafe-mural",
-      "title": "Work for GFG Cafe",
+      "title": "Work for GFG Café",
       "year": 2024,
       "medium": "Acrylic",
-      "description": "Commission for Greek From Greece Cafe in University City",
+      "description": "Commission for Greek From Greece Café in University City",
       "imagePaths": [
         "assets/images/art-page-auto/core/GFG_Close.jpg",
         "assets/images/art-page-auto/core/GFG_Far.jpg"
@@ -2459,6 +2498,39 @@
       "coverIndex": 0
     },
     {
+      "id": "absolutely-abstract-exhibition-philadelphia-sketch-club",
+      "title": "Absolutely Abstract Exhibition - Philadelphia Sketch Club",
+      "year": 2024,
+      "description": "Painting displayed in Philadelphia Sketch Club's Juried \"Absolutely Abstract\" Exhibition. The piece was titled \"Extinction Party I\" and was displayed simultaneously to \"Extinction Party II\" being displayed at the Icebox Project Space.",
+      "imagePaths": [
+        "assets/images/art-page-auto/paintings/2024-07-24_03-36-58_UTC_1.jpg",
+        "assets/images/art-page-auto/paintings/2024-07-24_03-36-58_UTC_2.jpg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "now-one-with-everyone-exhibition-icebox-project-space",
+      "title": "Now One With Everyone Exhibition - Icebox Project Space",
+      "year": 2024,
+      "description": "Painting displayed in Icebox Project Space's \"Now One with Everyone\" Exhibition. The piece was titled \"Extinction Party II\" and was displayed simultaneously to \"Extinction Party I\" being displayed at Philadelphia Sketch Club.",
+      "imagePaths": [
+        "assets/images/art-page-auto/paintings/2024-07-24_03-16-48_UTC_3.jpg",
+        "assets/images/art-page-auto/paintings/2024-07-24_03-16-48_UTC_2.jpg",
+        "assets/images/art-page-auto/paintings/2024-07-24_03-16-48_UTC_1.jpg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "mural-arts-40th-anniversary-artwork",
+      "title": "Mural Arts 40th Anniversary Artwork",
+      "year": 2024,
+      "description": "Artwork created in tribute to the 40th Anniversary of Philadelphia's Mural Arts program and was posted to Mural Arts's social media page after a kick-off press event at REC Philly with renowned Philadelphia Artists Darryl McCray (Cornbread), Raheem Saladeen Johnson (King Saladeen), and Gianni Lee.",
+      "imagePaths": [
+        "assets/images/art-page-auto/core/WhatsApp Image 2026-03-28 at 4.55.58 AM.jpeg"
+      ],
+      "coverIndex": 0
+    },
+    {
       "id": "cads-exhibition",
       "title": "CADS Visual and Applied Arts Exhibition",
       "year": 2023,
@@ -2469,6 +2541,30 @@
         "assets/images/art-page-auto/sculpture/3d.jpg",
         "assets/images/art-page-auto/clothing/2023-05-01_13-56-48_UTC_7.webp",
         "assets/images/art-page-auto/clothing/2d.jpg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "wkdu-917fm-electronic-music-marathon-19th-anniversary-artwork",
+      "title": "WKDU 91.7FM Electronic Music Marathon 19th Anniversary Artwork",
+      "year": 2023,
+      "description": "An art piece created as a part of WKDU's 2023 Electronic Music Marathon, an annual event that raises money for non-profits around the city of Philadelphia. DJs from around the city volunteer time to play back to back over the course of over 80 hours live on air. This piece continues to hang at the entrance to the radio station.",
+      "ctaUrl": "https://emm.wkdu.org/",
+      "ctaLabel": "View Event Info",
+      "imagePaths": [
+        "assets/images/art-page-auto/core/WhatsApp Image 2026-03-28 at 4.30.25 AM2.jpeg"
+      ],
+      "coverIndex": 0
+    },
+    {
+      "id": "projection-installation-exhibition-light-sound",
+      "title": "Projection Installation for Exhibition of Light and Sound",
+      "year": 2019,
+      "description": "Sound-Reactive Visualizer Installation displayed as a part of the Exhibition of Light and Sound",
+      "imagePaths": [
+        "assets/images/art-page-auto/installation/2019-12-21_13-22-07_UTC_1.jpg",
+        "assets/images/art-page-auto/installation/2019-12-21_13-22-07_UTC_2.jpg",
+        "assets/images/art-page-auto/installation/2019-12-21_13-22-07_UTC_3.jpg"
       ],
       "coverIndex": 0
     }
