@@ -34,7 +34,7 @@
       </div>
       <main id="iz43wi" class="main-content">
          <section id="ik7svu" class="hero-section">
-            <div class="\1">
+            <div>
                <div class="hero-text-block">
                   <h1 class="gjs-t-h1 hero-title">Artwork</h1>
                   <p class="hero-subtitle">Below is a collection of visual artworks I've created for a range of personal and professional purposes. I have created works for commercial, non-profit, and gallery settings, as well as works in clothing.</p>
@@ -79,7 +79,7 @@
             </div>
          </section>
          <section class="statement-section">
-            <div class="\1">
+            <div>
                <div class="artist-statement-card">
                   <h3 class="card-title">Artist Statement</h3>
                   <p class="card-body">My practice ranges from strongly medium-driven to highly structured, often with a central thru-line of embedded and abstracted imagery in a mix of automatic and very deliberate features. I like to create my artwork often in a blend of impulsiveness and a sort of intentional plausible deniability through abstraction, taking inspiration from a fascination with political abstraction in art, cryptography, and art forensics.</p>
@@ -305,37 +305,7 @@
                          };
                       }).filter(project => project.images.length > 0) : [];
 
-                      const fallbackProjects = (() => {
-                         const buckets = new Map();
-                         normalizedArtworks.forEach(artwork => {
-                            const title = (artwork.title || '').trim();
-                            const description = (artwork.description || '').trim();
-                            if (!title || !description) return;
-                            const medium = (artwork.medium || '').trim();
-                            const key = `${title}|||${description}|||${medium}`;
-                            if (!buckets.has(key)) buckets.set(key, []);
-                            buckets.get(key).push(artwork);
-                         });
-
-                         return Array.from(buckets.entries())
-                            .filter(([, images]) => images.length >= 2)
-                            .map(([key, images]) => {
-                               const [title, description, medium] = key.split('|||');
-                               return {
-                                  id: title,
-                                  title,
-                                  description,
-                                  medium,
-                                  ctaUrl: '',
-                                  ctaLabel: 'View Project',
-                                  ctaNewTab: true,
-                                  images,
-                                  coverIndex: 0
-                               };
-                            });
-                      })();
-
-                      const projects = explicitProjects.length > 0 ? explicitProjects : fallbackProjects;
+                      const projects = explicitProjects;
                       if (!projects.length) {
                          sectionEl.hidden = true;
                          return;
