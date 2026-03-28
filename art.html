@@ -298,7 +298,7 @@
              const response = await fetch('gallery-data.json');
              const data = await response.json();
              
-             if (!data.sections || data.sections.length === 0) {
+             if (!data.artworks || data.artworks.length === 0) {
                document.getElementById('artwork-count').textContent = 'No artworks yet';
                return;
              }
@@ -310,10 +310,24 @@
              const tabsContainer = document.getElementById('dynamic-tabs');
              const contentContainer = document.getElementById('dynamic-content');
              
-             data.sections.forEach((section, index) => {
+             // Build tab data with an "All" tab first, then section tabs with content.
+             const tabsData = [{
+               id: 'all',
+               label: 'All',
+               artworks: data.artworks
+             }];
+
+             (data.sections || []).forEach(section => {
                const sectionArtworks = data.artworks.filter(art => art.section === section.id);
                if (sectionArtworks.length === 0) return; // Skip empty sections
-               
+               tabsData.push({
+                 id: section.id,
+                 label: section.label,
+                 artworks: sectionArtworks
+               });
+             });
+
+             tabsData.forEach((section, index) => {
                // Create tab
                const tabId = `tab-${section.id}`;
                const panelId = `panel-${section.id}`;
@@ -339,7 +353,7 @@
                grid.className = 'simple-image-grid';
                
                // Add artworks to grid
-               sectionArtworks.forEach(artwork => {
+               section.artworks.forEach(artwork => {
                  const item = document.createElement('div');
                  item.className = 'image-item';
                  

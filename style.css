@@ -3513,23 +3513,26 @@ video {
 
 /* Simple Image Grid */
 .simple-image-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-	gap: 2.5rem;
+	column-count: 4;
+	column-gap: 1.25rem;
 	padding: 1rem;
 }
 
 .image-item {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	gap: 0.5rem;
-	align-items: center;
+	align-items: stretch;
+	width: 100%;
+	margin: 0 0 1.25rem;
+	break-inside: avoid;
+	page-break-inside: avoid;
 }
 
 .grid-image {
 	width: 100%;
 	height: auto;
-	object-fit: cover;
+	display: block;
 	border-radius: 0.125rem;
 	box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.5);
 	transition: transform 0.3s ease;
@@ -3537,14 +3540,32 @@ video {
 }
 
 .grid-image:hover {
-	transform: scale(1.05);
+	transform: scale(1.02);
 }
 
 .image-caption {
 	color: #94a3b8;
 	font-size: 0.9rem;
-	text-align: center;
+	text-align: left;
 	margin: 0;
+}
+
+@media (max-width: 1200px) {
+	.simple-image-grid {
+		column-count: 3;
+	}
+}
+
+@media (max-width: 900px) {
+	.simple-image-grid {
+		column-count: 2;
+	}
+}
+
+@media (max-width: 560px) {
+	.simple-image-grid {
+		column-count: 1;
+	}
 }
 
 .gallery-card {

@@ -5,8 +5,8 @@
       "label": "Clothing"
     },
     {
-      "id": "core-works",
-      "label": "Core Works"
+      "id": "core",
+      "label": "Core"
     },
     {
       "id": "digital",
@@ -88,243 +88,227 @@
     },
     {
       "filename": "1-Gloss-600dpi-11x17.png",
-      "path": "assets/images/art-page-auto/core-works/1-Gloss-600dpi-11x17.png",
+      "path": "assets/images/art-page-auto/core/1-Gloss-600dpi-11x17.png",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "1a.jpg",
-      "path": "assets/images/art-page-auto/core-works/1a.jpg",
+      "path": "assets/images/art-page-auto/core/1a.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "2-Gloss-600dpi-11x17.png",
-      "path": "assets/images/art-page-auto/core-works/2-Gloss-600dpi-11x17.png",
+      "path": "assets/images/art-page-auto/core/2-Gloss-600dpi-11x17.png",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "2.jpg",
-      "path": "assets/images/art-page-auto/core-works/2.jpg",
+      "path": "assets/images/art-page-auto/core/2.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "2a.jpg",
-      "path": "assets/images/art-page-auto/core-works/2a.jpg",
+      "path": "assets/images/art-page-auto/core/2a.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "2b.jpg",
-      "path": "assets/images/art-page-auto/core-works/2b.jpg",
+      "path": "assets/images/art-page-auto/core/2b.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "3-Gloss-600dpi-11x17.png",
-      "path": "assets/images/art-page-auto/core-works/3-Gloss-600dpi-11x17.png",
+      "path": "assets/images/art-page-auto/core/3-Gloss-600dpi-11x17.png",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "3a.jpg",
-      "path": "assets/images/art-page-auto/core-works/3a.jpg",
+      "path": "assets/images/art-page-auto/core/3a.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "3b.png",
-      "path": "assets/images/art-page-auto/core-works/3b.png",
+      "path": "assets/images/art-page-auto/core/3b.png",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "3d.jpg",
-      "path": "assets/images/art-page-auto/core-works/3d.jpg",
+      "path": "assets/images/art-page-auto/core/3d.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "4a.jpg",
-      "path": "assets/images/art-page-auto/core-works/4a.jpg",
+      "path": "assets/images/art-page-auto/core/4a.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
-    },
-    {
-      "filename": "4b.jpg",
-      "path": "assets/images/art-page-auto/core-works/4b.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "4b1.jpg",
-      "path": "assets/images/art-page-auto/core-works/4b1.jpg",
+      "path": "assets/images/art-page-auto/core/4b1.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "5b.jpg",
-      "path": "assets/images/art-page-auto/core-works/5b.jpg",
+      "path": "assets/images/art-page-auto/core/5b.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "6b.jpg",
-      "path": "assets/images/art-page-auto/core-works/6b.jpg",
+      "path": "assets/images/art-page-auto/core/6b.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "Macaw1.png",
-      "path": "assets/images/art-page-auto/core-works/Macaw1.png",
+      "path": "assets/images/art-page-auto/core/Macaw1.png",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
-    },
-    {
-      "filename": "WhatsApp Image 2025-11-05 at 00.00.13_1869a1e5.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.13_1869a1e5.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.31_2b724bc5.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_2b724bc5.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.31_2b724bc5.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.31_6005827e.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_6005827e.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.31_6005827e.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.31_9188d895.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_9188d895.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.31_9188d895.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.31_aa205321.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.31_aa205321.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.31_aa205321.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.32_be7ae832.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.32_be7ae832.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.32_be7ae832.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.32_e2988df4.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.32_e2988df4.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.32_e2988df4.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.34_0489c3cb.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.34_0489c3cb.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.34_0489c3cb.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.34_a07130ee.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.34_a07130ee.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.34_a07130ee.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.34_e40b4fb5.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.34_e40b4fb5.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.34_e40b4fb5.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.35_152c5613.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.35_152c5613.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.35_152c5613.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.35_4191779d.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.35_4191779d.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.35_4191779d.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.36_adc4aa77.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.36_adc4aa77.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.36_adc4aa77.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.39_ce44676e.jpg",
-      "path": "assets/images/art-page-auto/core-works/WhatsApp Image 2025-11-05 at 00.00.39_ce44676e.jpg",
+      "path": "assets/images/art-page-auto/core/WhatsApp Image 2025-11-05 at 00.00.39_ce44676e.jpg",
       "title": "",
       "medium": "",
       "description": "",
-      "section": "core-works"
+      "section": "core"
     },
     {
       "filename": "FLC0769.png",
