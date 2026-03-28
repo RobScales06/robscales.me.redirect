@@ -48,6 +48,8 @@ git commit -m "Add new artworks"
 git push
 ```
 
+During sync, the script now also generates optimized WebP display assets in `assets/images/art-page-previews/` for supported raster sources. The page uses these lighter derivatives in the gallery grid and featured project views, while the lightbox still opens the original file from `path`.
+
 ## 📝 Editing Metadata
 
 After sync, edit `gallery-data.json` to add details:
@@ -61,6 +63,8 @@ After sync, edit `gallery-data.json` to add details:
     {
       "filename": "my-artwork.jpg",
       "path": "assets/images/art-page-auto/core-works/my-artwork.jpg",
+      "previewPath": "assets/images/art-page-previews/core-works/my-artwork.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/core-works/my-artwork.jpg.thumb.webp",
       "title": "Midnight Dreams",
       "displayTitle": true,
       "medium": "Oil on Canvas",
@@ -96,8 +100,9 @@ Example hidden-from-grid artwork:
 Recommended workflow:
 
 1. Keep metadata in JSON for long-term organization
-2. Use visibility flags to control what appears publicly
-3. Avoid filename-based display rules to keep auto-sync simple and predictable
+2. Let sync generate `previewPath` and `thumbnailPath` automatically for raster images
+3. Use visibility flags to control what appears publicly
+4. Avoid filename-based display rules to keep auto-sync simple and predictable
 
 ## 🌟 Featured Projects Carousel
 
@@ -152,6 +157,7 @@ Optional carousel behavior settings:
 ## ✨ Features
 
 - **Auto-detection**: New images are automatically found and added
+- **Optimized previews**: Sync creates WebP thumbnails and larger preview images for faster gallery browsing
 - **Metadata preservation**: Your titles/descriptions are never overwritten
 - **Safe sync backup**: A `gallery-data.backup.json` snapshot is written before each sync
 - **Archive retention**: Missing-file metadata is moved to `archivedArtworks` instead of being dropped
@@ -213,6 +219,7 @@ The GitHub Action runs when:
 - Use descriptive filenames - they become default titles
 - Group similar works in the same folder/category
 - Keep original, high-quality images
+- Large originals are fine; sync will generate lighter display images automatically
 - The sync never deletes entries, only adds new ones
 - You can manually edit the JSON anytime
 

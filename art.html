@@ -357,6 +357,7 @@
                          const safeIndex = Math.max(0, Math.min(imageIndex, project.images.length - 1));
                          imageIndex = safeIndex;
                          const activeImage = project.images[imageIndex];
+                         const activePreview = activeImage.previewPath || activeImage.path;
 
                          titleEl.textContent = project.title || 'Featured Project';
                          descEl.textContent = project.description || '';
@@ -384,7 +385,7 @@
                             ctaEl.removeAttribute('rel');
                          }
 
-                         mainImgEl.src = activeImage.path;
+                         mainImgEl.src = activePreview;
                          mainImgEl.alt = project.title || 'Featured project image';
 
                          thumbsEl.innerHTML = '';
@@ -395,7 +396,7 @@
                             thumb.setAttribute('aria-label', `Show image ${idx + 1} for ${project.title || 'project'}`);
 
                             const thumbImg = document.createElement('img');
-                            thumbImg.src = image.path;
+                            thumbImg.src = image.thumbnailPath || image.previewPath || image.path;
                             thumbImg.alt = image.title || `Project image ${idx + 1}`;
                             thumbImg.loading = 'lazy';
 
@@ -567,13 +568,14 @@
                  item.className = 'image-item';
                  
                  const img = document.createElement('img');
-                 img.src = artwork.path;
+                img.src = artwork.thumbnailPath || artwork.previewPath || artwork.path;
                   const showTitle = artwork.displayTitle !== false;
                   const rawTitle = (artwork.title && artwork.title.trim()) || '';
                   const rawMedium = (artwork.medium && artwork.medium.trim()) || '';
                   img.alt = rawTitle || 'Artwork image';
                  img.className = 'grid-image';
                          img.loading = 'lazy';
+                   img.decoding = 'async';
                          img.tabIndex = 0;
                          img.setAttribute('role', 'button');
                   img.setAttribute('aria-label', `Open ${rawTitle || 'artwork'} in full view`);

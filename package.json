@@ -7,7 +7,14 @@
     "dev": "python -m http.server 8000",
     "dev:node": "npx http-server -p 8000 -o"
   },
-  "keywords": ["portfolio", "art", "gallery"],
+  "keywords": [
+    "portfolio",
+    "art",
+    "gallery"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
 }
