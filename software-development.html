@@ -1,184 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Software Development | Projects and Demos</title>
+      <title>Software Development | Robert Scales</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <meta name="robots" content="index,follow">
-      <meta name="generator" content="GrapesJS Studio">
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
-      <link rel="stylesheet" href="./style.css">
+      <meta name="robots" content="index,follow"/>
+      <meta name="generator" content="GrapesJS Studio"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="./style.css"/>
+      <style>
+         .software-hero-layout {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+         }
+
+         .software-hero-chips,
+         .software-chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+         }
+
+         .software-chip {
+            border: 1px solid rgb(255 255 255 / 0.18);
+            color: rgb(226 232 240 / 1);
+            background: rgb(255 255 255 / 0.03);
+            border-radius: 9999px;
+            padding: 0.25rem 0.7rem;
+            font-size: 0.8rem;
+            line-height: 1.35;
+         }
+
+         .software-hero-card,
+         .software-grid-card {
+            border-radius: 0.95rem;
+            border: 1px solid rgb(255 255 255 / 0.12);
+            background: rgb(255 255 255 / 0.04);
+            padding: 1.1rem;
+         }
+
+         .software-hero-image {
+            width: 100%;
+            border-radius: 0.7rem;
+            border: 1px solid rgb(255 255 255 / 0.12);
+            margin-top: 0.9rem;
+         }
+
+         .software-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+         }
+
+         .software-grid-card h3 {
+            color: rgb(248 250 252 / 1);
+            margin-bottom: 0.3rem;
+            font-size: 1.05rem;
+            line-height: 1.3;
+            font-weight: 600;
+         }
+
+         .software-card-subtitle {
+            color: rgb(148 163 184 / 1);
+            margin-bottom: 0.65rem;
+            font-size: 0.9rem;
+         }
+
+         .software-card-list {
+            margin: 0;
+            padding-left: 1rem;
+            display: grid;
+            gap: 0.35rem;
+            color: rgb(203 213 225 / 1);
+            font-size: 0.95rem;
+         }
+
+         .software-tile-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+         }
+
+         .software-link-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            margin-top: 0.9rem;
+         }
+
+         .software-inline-link {
+            color: rgb(226 232 240 / 1);
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            text-underline-offset: 3px;
+         }
+
+         .software-inline-link:hover {
+            color: rgb(245 241 232 / 1);
+         }
+
+         .software-two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+         }
+
+         .software-plain-list {
+            margin: 0;
+            padding-left: 1rem;
+            color: rgb(203 213 225 / 1);
+            display: grid;
+            gap: 0.3rem;
+         }
+
+         @media (max-width: 980px) {
+            .software-hero-layout,
+            .software-grid,
+            .software-tile-grid,
+            .software-two-col {
+               grid-template-columns: 1fr;
+            }
+         }
+      </style>
    </head>
    <body class="gjs-t-body body">
-      <div id="ij9f7jj" class="banner-container">
-         <div class="banner-row">
-            <div class="banner-left-image-wrap"><img alt="Left Banner Image" loading="eager" src="https://cdn.grapesjs.com/workspaces/cmhcpm7od0h2jwix4as6ntgpx/assets/c8e18729-7a35-4397-a5f7-89f4a8ecdb85__leftimage.png" id="igciu-3" class="banner-left-image"/></div>
-            <div class="banner-center-logo-wrap"><img alt="Your Center Logo" loading="eager" src="https://cdn.grapesjs.com/workspaces/cmhcpm7od0h2jwix4as6ntgpx/assets/98c7093f-11f3-4519-815c-0830e385eb25__yourlogo.png" id="ir5or-3" class="banner-center-logo"/></div>
-            <div class="banner-right-image-wrap"><img alt="Right Banner Image" loading="eager" src="https://cdn.grapesjs.com/workspaces/cmhcpm7od0h2jwix4as6ntgpx/assets/9e9b8118-b572-4a0d-9feb-3817d1c40955__rightimage.png" id="ik1ik-3" class="banner-right-image"/></div>
-         </div>
-      </div>
-      <div id="ifiew8v" class="navigation-container">
-         <ul id="ii4a22g" class="navigation-list">
-            <li><a href="index.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-home.svg?color=white" alt="Home Icon" class="navigation-icon"/> <span>Home</span></a></li>
-            <li><a href="art.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-palette.svg?color=white" alt="Art Icon" class="navigation-icon"/> <span>Art</span></a></li>
-            <li><a href="animation.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-film.svg?color=white" alt="Animation Icon" class="navigation-icon"/> <span>Animation</span></a></li>
-            <li><a href="game-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-gamepad-2.svg?color=white" alt="Game Dev Icon" class="navigation-icon"/> <span>Game Development</span></a></li>
-            <li><a href="music.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-music-2.svg?color=white" alt="Music Icon" class="navigation-icon"/> <span>Music</span></a></li>
-            <li><a href="software-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-code-2.svg?color=white" alt="Software Icon" class="navigation-icon"/> <span>Software</span></a></li>
+      <div id="software-nav" class="navigation-container">
+         <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <img src="https://api.iconify.design/lucide-menu.svg?color=white" alt="Menu" class="menu-icon"/>
+         </button>
+         <ul id="software-nav-list" class="navigation-list">
+            <li><a href="index.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-home.svg?color=white" alt="Home Icon" class="navigation-icon"/><span>Home</span></a></li>
+            <li><a href="art.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-palette.svg?color=white" alt="Art Icon" class="navigation-icon"/><span>Art</span></a></li>
+            <li><a href="animation.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-film.svg?color=white" alt="Animation Icon" class="navigation-icon"/><span>Animation</span></a></li>
+            <li><a href="game-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-gamepad-2.svg?color=white" alt="Game Dev Icon" class="navigation-icon"/><span>Game Development</span></a></li>
+            <li><a href="music.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-music-2.svg?color=white" alt="Music Icon" class="navigation-icon"/><span>Music</span></a></li>
+            <li><a href="software-development.html" class="gjs-t-link navigation-link" aria-current="page"><img src="https://api.iconify.design/lucide-code-2.svg?color=white" alt="Software Icon" class="navigation-icon"/><span>Software</span></a></li>
          </ul>
       </div>
+      <div class="banner-container">
+         <div class="banner-row">
+            <div class="banner-left-image-wrap"><img alt="Left Banner Image" loading="eager" src="assets/images/left_image2.png" class="banner-left-image"/></div>
+            <div class="banner-center-logo-wrap"><img alt="Center Logo" loading="eager" src="assets/images/your_logo.png" class="banner-center-logo"/></div>
+            <div class="banner-right-image-wrap"><img alt="Right Banner Image" loading="eager" src="assets/images/right_image2.png" class="banner-right-image"/></div>
+         </div>
+      </div>
+
       <main class="main-content">
-         <section id="ifvqj9" class="hero-section">
-            <div class="\1">
+         <section class="hero-section">
+            <div class="software-hero-layout">
                <div class="hero-text-block">
-                  <h1 class="gjs-t-h1 hero-title">Software Projects</h1>
-                  <p class="hero-subtitle">A curated collection of applications, tools, and experiments. Each project includes an overview, tech stack, screenshots, and links to source code or live demos.</p>
-                  <div class="hero-cta-group"><a href="#projects" class="gjs-t-button cta-button-view-projects">View Projects</a><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="cta-button-github"><img src="https://api.iconify.design/lucide-github.svg?color=%23f8fafc" alt="GitHub" class="github-icon"/><span>GitHub Profile</span></a></div>
+                  <h1 class="gjs-t-h1 hero-title">Software Development</h1>
+                  <p class="hero-subtitle">I build practical systems across web, mobile, automation, machine learning, and embedded contexts. This page summarizes professional work, selected projects, and technical strengths from my engineering background.</p>
+                  <div class="software-hero-chips">
+                     <span class="software-chip">Python</span>
+                     <span class="software-chip">JavaScript</span>
+                     <span class="software-chip">React + Flask</span>
+                     <span class="software-chip">Docker + HPC</span>
+                     <span class="software-chip">Computer Engineering B.S.</span>
+                  </div>
+                  <div class="software-link-row">
+                     <a href="mailto:rscales06@gmail.com" class="gjs-t-button contact-button">Email Robert</a>
+                     <a href="https://www.linkedin.com/in/robert-scales-a2543b176/" target="_blank" rel="noopener noreferrer" class="software-inline-link">LinkedIn Profile</a>
+                  </div>
                </div>
-               <div class="hero-visual-spacer"></div>
-               <div class="\1"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22developer%20code%20monitor%22&amp;w=760&amp;h=480" alt="Coding setup with multiple screens" class="hero-image"/></div>
-            </div>
-         </section>
-         <section id="projects" class="projects-section">
-            <div class="projects-header">
-               <h2 class="gjs-t-h2">Featured Projects</h2>
-               <div class="projects-meta"><img src="https://api.iconify.design/lucide-layers.svg?color=%2394a3b8" alt="layers" class="projects-meta-icon"/><span>Multi-stack, production-ready examples</span></div>
-            </div>
-            <div class="\1">
-               <article class="project-card">
-                  <div class="\1">
-                     <img src="https://app.grapesjs.com/api/assets/random-image?query=%22saas%20dashboard%22&amp;w=1200&amp;h=520" alt="SaaS dashboard preview" class="project-image"/>
-                     <div class="project-image-overlay"></div>
-                     <div class="project-image-badge-group"><span class="project-image-badge">Web App</span><span class="project-image-badge">SaaS</span></div>
-                  </div>
-                  <div class="project-content">
-                     <div class="project-header">
-                        <div class="project-title-block">
-                           <h3 class="project-title">Pulse Analytics</h3>
-                           <p class="project-description">A full-featured analytics dashboard for events and product metrics with real-time charts, role-based access, and export tooling.</p>
-                        </div>
-                        <div class="project-links-compact"><a href="https://github.com/your-username/pulse-analytics" target="_blank" rel="noopener noreferrer" class="project-link-icon-github"><img src="https://api.iconify.design/lucide-github.svg?color=%23f8fafc" alt="GitHub" class="project-link-icon"/></a><a href="https://pulse-analytics.example.com" target="_blank" rel="noopener noreferrer" class="project-link-icon-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live Demo" class="project-link-icon"/></a></div>
-                     </div>
-                     <div class="project-tech-stack"><span class="tech-badge">TypeScript</span><span class="tech-badge">React</span><span class="tech-badge">Tailwind</span><span class="tech-badge">Node.js</span><span class="tech-badge">PostgreSQL</span></div>
-                     <div class="project-actions"><a href="https://github.com/your-username/pulse-analytics" target="_blank" rel="noopener noreferrer" class="gjs-t-button project-button-github"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="project-button-icon"/><span>Source</span></a><a href="https://pulse-analytics.example.com" target="_blank" rel="noopener noreferrer" class="project-button-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live" class="project-button-icon"/><span>Live Demo</span></a></div>
-                  </div>
-               </article>
-               <article class="project-card">
-                  <div class="\1">
-                     <img src="https://app.grapesjs.com/api/assets/random-image?query=%22mobile%20app%20ui%22&amp;w=1200&amp;h=520" alt="Mobile app interface preview" class="project-image"/>
-                     <div class="project-image-overlay"></div>
-                     <div class="project-image-badge-group"><span class="project-image-badge">Mobile</span><span class="project-image-badge">Cross-Platform</span></div>
-                  </div>
-                  <div class="project-content">
-                     <div class="project-header">
-                        <div class="project-title-block">
-                           <h3 class="project-title">TrailMate</h3>
-                           <p class="project-description">Offline-first hiking companion app with GPS tracking, elevation profiles, and route planning that syncs across devices.</p>
-                        </div>
-                        <div class="project-links-compact"><a href="https://github.com/your-username/trailmate" target="_blank" rel="noopener noreferrer" class="project-link-icon-github"><img src="https://api.iconify.design/lucide-github.svg?color=%23f8fafc" alt="GitHub" class="project-link-icon"/></a><a href="https://trailmate.example.com" target="_blank" rel="noopener noreferrer" class="project-link-icon-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live Demo" class="project-link-icon"/></a></div>
-                     </div>
-                     <div class="project-tech-stack"><span class="tech-badge">Flutter</span><span class="tech-badge">Dart</span><span class="tech-badge">SQLite</span><span class="tech-badge">Mapbox</span></div>
-                     <div class="project-actions"><a href="https://github.com/your-username/trailmate" target="_blank" rel="noopener noreferrer" class="gjs-t-button project-button-github"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="project-button-icon"/><span>Source</span></a><a href="https://trailmate.example.com" target="_blank" rel="noopener noreferrer" class="project-button-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live" class="project-button-icon"/><span>Live Demo</span></a></div>
-                  </div>
-               </article>
-               <article class="project-card">
-                  <div class="\1">
-                     <img src="https://app.grapesjs.com/api/assets/random-image?query=%22cli%20tool%22&amp;w=1200&amp;h=520" alt="CLI tool terminal screenshot" loading="lazy" class="project-image"/>
-                     <div class="project-image-overlay"></div>
-                     <div class="project-image-badge-group"><span class="project-image-badge">CLI</span><span class="project-image-badge">Automation</span></div>
-                  </div>
-                  <div class="project-content">
-                     <div class="project-header">
-                        <div class="project-title-block">
-                           <h3 class="project-title">Shipwright</h3>
-                           <p class="project-description">A release automation CLI that handles semantic versioning, changelog generation, and multi-registry publishing.</p>
-                        </div>
-                        <div class="project-links-compact"><a href="https://github.com/your-username/shipwright" target="_blank" rel="noopener noreferrer" class="project-link-icon-github"><img src="https://api.iconify.design/lucide-github.svg?color=%23f8fafc" alt="GitHub" class="project-link-icon"/></a><a href="https://npmjs.com/package/@your-username/shipwright" target="_blank" rel="noopener noreferrer" class="project-link-icon-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Docs" class="project-link-icon"/></a></div>
-                     </div>
-                     <div class="project-tech-stack"><span class="tech-badge">Node.js</span><span class="tech-badge">TypeScript</span><span class="tech-badge">GitHub Actions</span><span class="tech-badge">NPM</span></div>
-                     <div class="project-actions"><a href="https://github.com/your-username/shipwright" target="_blank" rel="noopener noreferrer" class="gjs-t-button project-button-github"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="project-button-icon"/><span>Source</span></a><a href="https://npmjs.com/package/@your-username/shipwright" target="_blank" rel="noopener noreferrer" class="project-button-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Docs" class="project-button-icon"/><span>Docs</span></a></div>
-                  </div>
-               </article>
-               <article class="project-card">
-                  <div class="\1">
-                     <img src="https://app.grapesjs.com/api/assets/random-image?query=%22computer%20vision%22&amp;w=1200&amp;h=520" alt="Computer vision model visualization" loading="lazy" class="project-image"/>
-                     <div class="project-image-overlay"></div>
-                     <div class="project-image-badge-group"><span class="project-image-badge">AI</span><span class="project-image-badge">Vision</span></div>
-                  </div>
-                  <div class="project-content">
-                     <div class="project-header">
-                        <div class="project-title-block">
-                           <h3 class="project-title">Sightline</h3>
-                           <p class="project-description">Real-time object detection pipeline optimized for edge devices with a web dashboard to monitor inference performance.</p>
-                        </div>
-                        <div class="project-links-compact"><a href="https://github.com/your-username/sightline" target="_blank" rel="noopener noreferrer" class="project-link-icon-github"><img src="https://api.iconify.design/lucide-github.svg?color=%23f8fafc" alt="GitHub" class="project-link-icon"/></a><a href="https://sightline.example.com" target="_blank" rel="noopener noreferrer" class="project-link-icon-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live Demo" class="project-link-icon"/></a></div>
-                     </div>
-                     <div class="project-tech-stack"><span class="tech-badge">Python</span><span class="tech-badge">TensorRT</span><span class="tech-badge">FastAPI</span><span class="tech-badge">WebSocket</span></div>
-                     <div class="project-actions"><a href="https://github.com/your-username/sightline" target="_blank" rel="noopener noreferrer" class="gjs-t-button project-button-github"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="project-button-icon"/><span>Source</span></a><a href="https://sightline.example.com" target="_blank" rel="noopener noreferrer" class="project-button-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live" class="project-button-icon"/><span>Live Demo</span></a></div>
-                  </div>
-               </article>
-            </div>
-         </section>
-         <section class="additional-projects-section">
-            <div class="additional-header">
-               <h2 class="gjs-t-h2">More Projects</h2>
-               <a href="https://github.com/your-username?tab=repositories" target="_blank" rel="noopener noreferrer" class="additional-link"><img src="https://api.iconify.design/lucide-folder-open.svg?color=%2394a3b8" alt="Repositories" class="additional-icon"/><span>Browse Repositories</span></a>
-            </div>
-            <div class="\1">
-               <div class="mini-project-card">
-                  <div class="\1"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22api%20server%22&amp;w=900&amp;h=420" alt="API server dashboard" loading="lazy" class="mini-project-image"/></div>
-                  <div>
-                     <h3 class="mini-project-title">Courier API</h3>
-                     <p class="mini-project-description">A high-throughput messaging API with webhook retries and rate limiting.</p>
-                  </div>
-                  <div class="mini-project-tech-stack"><span class="tech-badge">Go</span><span class="tech-badge">Redis</span><span class="tech-badge">gRPC</span></div>
-                  <div class="mini-project-actions"><a href="https://github.com/your-username/courier-api" target="_blank" rel="noopener noreferrer" class="gjs-t-button mini-project-button-source"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="mini-project-button-icon"/><span>Source</span></a><a href="https://courier-api.example.com" target="_blank" rel="noopener noreferrer" class="mini-project-button-docs"><img src="https://api.iconify.design/lucide-book-open.svg?color=%23f8fafc" alt="Docs" class="mini-project-button-icon"/><span>Docs</span></a></div>
-               </div>
-               <div class="mini-project-card">
-                  <div class="\1"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22data%20visualization%22&amp;w=900&amp;h=420" alt="Data visualization preview" loading="lazy" class="mini-project-image"/></div>
-                  <div>
-                     <h3 class="mini-project-title">GraphForge</h3>
-                     <p class="mini-project-description">Interactive graph exploration tool for large datasets with custom layouts.</p>
-                  </div>
-                  <div class="mini-project-tech-stack"><span class="tech-badge">Rust</span><span class="tech-badge">WebAssembly</span><span class="tech-badge">Svelte</span></div>
-                  <div class="mini-project-actions"><a href="https://github.com/your-username/graphforge" target="_blank" rel="noopener noreferrer" class="gjs-t-button mini-project-button-source"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="mini-project-button-icon"/><span>Source</span></a><a href="https://graphforge.example.com" target="_blank" rel="noopener noreferrer" class="mini-project-button-demo"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23f8fafc" alt="Live" class="mini-project-button-icon"/><span>Demo</span></a></div>
-               </div>
-               <div class="mini-project-card">
-                  <div class="\1"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22security%20tooling%22&amp;w=900&amp;h=420" alt="Security tooling dashboard" loading="lazy" class="mini-project-image"/></div>
-                  <div>
-                     <h3 class="mini-project-title">Sentinel</h3>
-                     <p class="mini-project-description">Policy-as-code engine with audit trails and real-time alerts.</p>
-                  </div>
-                  <div class="mini-project-tech-stack"><span class="tech-badge">Python</span><span class="tech-badge">OpenPolicyAgent</span><span class="tech-badge">Kafka</span></div>
-                  <div class="mini-project-actions"><a href="https://github.com/your-username/sentinel" target="_blank" rel="noopener noreferrer" class="gjs-t-button mini-project-button-source"><img src="https://api.iconify.design/lucide-github.svg?color=%230f1115" alt="GitHub" class="mini-project-button-icon"/><span>Source</span></a><a href="https://sentinel.example.com" target="_blank" rel="noopener noreferrer" class="mini-project-button-docs"><img src="https://api.iconify.design/lucide-book-open.svg?color=%23f8fafc" alt="Docs" class="mini-project-button-icon"/><span>Docs</span></a></div>
+               <div class="software-hero-card">
+                  <h2 class="gjs-t-h2" style="font-size:1.2rem;margin-bottom:0.6rem;">Snapshot</h2>
+                  <ul class="software-plain-list">
+                     <li>Research Engineer experience in web UX, analytics planning, and mobile UI.</li>
+                     <li>Built instrumentation automation software that scaled measurement throughput.</li>
+                     <li>Hands-on in QA, visualization, graphics, and hardware-oriented software.</li>
+                     <li>Based in Philadelphia, PA. Open to collaborative software projects.</li>
+                  </ul>
+                  <img src="assets/images/code/code1.png" alt="Coding workstation and software workflow" class="software-hero-image"/>
                </div>
             </div>
          </section>
-         <section class="callout-section">
-            <div class="callout-card">
-               <div class="callout-text">
-                  <h3 class="callout-title">Have an idea you want to build?</h3>
-                  <p class="callout-description">From prototypes to production systems, I can help design, implement, and ship high-quality software. Let’s collaborate.</p>
-               </div>
-               <div class="callout-actions"><a href="mailto:you@example.com" class="gjs-t-button callout-button-contact"><img src="https://api.iconify.design/lucide-mail.svg?color=%230f1115" alt="Email" class="callout-button-icon"/><span>Contact Me</span></a><a href="./index.html" class="callout-button-home"><img src="https://api.iconify.design/lucide-home.svg?color=%23f8fafc" alt="Home" class="callout-button-icon"/><span>Back to Home</span></a></div>
+
+         <section class="gallery-section" id="experience">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Professional Experience</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-briefcase.svg?color=%2394a3b8" alt="Experience Icon" class="icon-images"/><span>2019 - Present</span></div>
             </div>
+            <div class="software-grid">
+               <article class="software-grid-card">
+                  <h3>Temple University VIDAR Lab</h3>
+                  <p class="software-card-subtitle">Research Engineer | Philadelphia, PA | Jan 2026 - Mar 2026</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">JavaScript</span>
+                     <span class="software-chip">Python</span>
+                     <span class="software-chip">React</span>
+                     <span class="software-chip">Flask</span>
+                     <span class="software-chip">Swift</span>
+                     <span class="software-chip">Docker</span>
+                  </div>
+                  <ul class="software-card-list">
+                     <li>Refactored frontend web app flows and modernized UI/UX behavior.</li>
+                     <li>Implemented frontend role controls for users and administrators.</li>
+                     <li>Planned analytics, standardized logging strategy, QA process, and PII safeguards.</li>
+                     <li>Contributed to mobile UI updates from user feedback and explored HPC pathways for ML research.</li>
+                  </ul>
+               </article>
+
+               <article class="software-grid-card">
+                  <h3>Drexel Mesoscale Materials Lab</h3>
+                  <p class="software-card-subtitle">Software Developer and Lab Member | Philadelphia, PA | Jan 2021 - Jan 2023</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Python</span>
+                     <span class="software-chip">Keysight Systems</span>
+                     <span class="software-chip">Windows Pipelines</span>
+                  </div>
+                  <ul class="software-card-list">
+                     <li>Built Python automation for Keysight instrumentation, scaling daily throughput from dozens to hundreds of measurements.</li>
+                     <li>Developed communication pipelines between test systems and a core Windows machine.</li>
+                     <li>Partnered with researchers to refine requirements, debug issues, and maintain reliability.</li>
+                     <li>Produced onboarding documentation and contributed software to a 2023 Advanced Materials publication.</li>
+                  </ul>
+                  <div class="software-link-row"><a href="https://doi.org/10.1002/adma.202300257" target="_blank" rel="noopener noreferrer" class="software-inline-link">Publication DOI</a></div>
+               </article>
+
+               <article class="software-grid-card">
+                  <h3>EdTell, LLC</h3>
+                  <p class="software-card-subtitle">Web Developer and QA Tester | Garnet Valley, PA | Sep 2021 - Mar 2022</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Angular</span>
+                     <span class="software-chip">TypeScript</span>
+                     <span class="software-chip">Storybook</span>
+                     <span class="software-chip">Cypress</span>
+                  </div>
+                  <ul class="software-card-list">
+                     <li>Developed Angular UI components for a virtual education platform.</li>
+                     <li>Led QA testing workflows using Cypress to increase release confidence.</li>
+                     <li>Contributed in recurring team and company stand-ups to maintain alignment.</li>
+                  </ul>
+               </article>
+
+               <article class="software-grid-card">
+                  <h3>Metropolitan Acoustics</h3>
+                  <p class="software-card-subtitle">Software Developer, UI and Branding | Philadelphia, PA | Sep 2019 - Feb 2020</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Python</span>
+                     <span class="software-chip">Tkinter</span>
+                     <span class="software-chip">Adobe Suite</span>
+                  </div>
+                  <ul class="software-card-list">
+                     <li>Designed automation software to consolidate field acoustical data.</li>
+                     <li>Improved usability with custom Tkinter GUI tooling and a reusable mini UI library.</li>
+                     <li>Documented software and guided coworkers through practical onboarding sessions.</li>
+                  </ul>
+               </article>
+            </div>
+         </section>
+
+         <section class="statement-section" id="projects">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Selected Projects</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-rocket.svg?color=%2394a3b8" alt="Projects Icon" class="icon-images"/><span>Hardware, ML, graphics, and creative tech</span></div>
+            </div>
+            <div class="software-tile-grid">
+               <article class="artist-statement-card">
+                  <h3 class="card-title">Two-Level Rowing Machine Kinematic Analysis (2023)</h3>
+                  <p class="card-body">Senior thesis project focused on motion tracking quality with Mediapipe and OpenCV to improve rowing-machine kinematic analysis.</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Python</span>
+                     <span class="software-chip">OpenCV</span>
+                     <span class="software-chip">Mediapipe</span>
+                  </div>
+               </article>
+
+               <article class="artist-statement-card">
+                  <h3 class="card-title">Xylophone-Playing Animatronic Cat (2018)</h3>
+                  <p class="card-body">Developed robotic hardware and control logic that translated note names into physical motion to play a toy xylophone.</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Arduino</span>
+                     <span class="software-chip">Embedded Control</span>
+                     <span class="software-chip">Mechatronics</span>
+                  </div>
+               </article>
+
+               <article class="artist-statement-card">
+                  <h3 class="card-title">SpreadLove 3D Game (2020)</h3>
+                  <p class="card-body">Solo-developed Unity title including gameplay systems, 3D assets, original music, and sound design.</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Unity</span>
+                     <span class="software-chip">3D Modeling</span>
+                     <span class="software-chip">Audio</span>
+                  </div>
+               </article>
+
+               <article class="artist-statement-card">
+                  <h3 class="card-title">Image and UI Utilities (2019 - 2020)</h3>
+                  <p class="card-body">Created a collection of Python tools including image editors, live histogram equalization, string analysis utilities, and a quick Tkinter library.</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Python</span>
+                     <span class="software-chip">Tkinter</span>
+                     <span class="software-chip">OpenCV</span>
+                  </div>
+               </article>
+
+               <article class="artist-statement-card">
+                  <h3 class="card-title">AR Snapchat Filter (2019)</h3>
+                  <p class="card-body">Built an AR filter that tracked and anchored a 3D model to a face through Drexel XR club activities.</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">AR</span>
+                     <span class="software-chip">3D Tracking</span>
+                     <span class="software-chip">Interactive Media</span>
+                  </div>
+               </article>
+
+               <article class="artist-statement-card">
+                  <h3 class="card-title">Microtonal Synthesizer in Max/MSP (2020)</h3>
+                  <p class="card-body">Developed microtonal digital synthesis concepts with ExCite Center collaborators for advanced music technology exploration.</p>
+                  <div class="software-chip-list">
+                     <span class="software-chip">Max/MSP</span>
+                     <span class="software-chip">DSP</span>
+                     <span class="software-chip">Creative Coding</span>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <section class="gallery-section" id="skills">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Skills and Tooling</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-cpu.svg?color=%2394a3b8" alt="Skills Icon" class="icon-images"/><span>Cross-disciplinary engineering stack</span></div>
+            </div>
+            <div class="software-two-col">
+               <div class="artist-statement-card">
+                  <h3 class="card-title">Programming and Frameworks</h3>
+                  <p class="card-body">Python, JavaScript, React, Flask, Java, SQL, C, C plus plus, C sharp, Assembly, Bash, Angular, HTML, CSS.</p>
+               </div>
+               <div class="artist-statement-card">
+                  <h3 class="card-title">Graphics and Visualization</h3>
+                  <p class="card-body">OpenGL, WebGL, GLSL, Three.js, Blender 3D, PIL, OpenCV, and Mediapipe for visual computing pipelines.</p>
+               </div>
+               <div class="artist-statement-card">
+                  <h3 class="card-title">Software and DevOps</h3>
+                  <p class="card-body">Linux environments, WSL, Docker, Selenium, PostHog, VS Code, Visual Studio, Git, Unity, Godot, and Adobe Suite.</p>
+               </div>
+               <div class="artist-statement-card">
+                  <h3 class="card-title">Hardware and Platforms</h3>
+                  <p class="card-body">ESP32, Raspberry Pi, Arduino, TI Launchpad, BeagleBone, Basys3, Keysight instrumentation, and HPC workflows.</p>
+               </div>
+            </div>
+         </section>
+
+         <section class="statement-section" id="education">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Education and Community</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-graduation-cap.svg?color=%2394a3b8" alt="Education Icon" class="icon-images"/><span>Drexel University B.S. Computer Engineering</span></div>
+            </div>
+            <div class="software-two-col">
+               <article class="artist-statement-card">
+                  <h3 class="card-title">Education</h3>
+                  <p class="card-body">Drexel University, Philadelphia, PA</p>
+                  <p class="card-body">Bachelor of Science in Computer Engineering, Sep 2018 - Dec 2023</p>
+                  <p class="card-body" style="margin-top:0.6rem;">Selected coursework included data structures, machine learning, pattern recognition, interactive graphics, applied robotics, networks, architecture, and embedded design.</p>
+               </article>
+               <article class="artist-statement-card">
+                  <h3 class="card-title">Organizations and Additional Background</h3>
+                  <ul class="software-plain-list">
+                     <li>Drexel CyberDragons CTF participant (top 13 placement).</li>
+                     <li>Member of DUXR, AES, ACM SIGGRAPH, and Drexel AI communities.</li>
+                     <li>Performer with Fuerza (UPenn Latinx ensemble) at Carnegie Hall.</li>
+                     <li>Current affiliations include Philadelphia SIGGRAPH, Philly Game Mechanics, DC215, Ex Machina Parlor, Hive76, and PhillyCAM.</li>
+                  </ul>
+               </article>
+            </div>
+         </section>
+
+         <section class="contact-section">
+            <div class="contact-header">
+               <h2 class="gjs-t-h2">Get in touch</h2>
+               <div class="contact-actions">
+                  <a href="mailto:rscales06@gmail.com" class="gjs-t-button contact-button">rscales06@gmail.com</a>
+                  <a href="./index.html" class="gjs-t-link back-home-link"><img src="https://api.iconify.design/lucide-arrow-left.svg?color=%23a78bfa" alt="Back Icon" class="back-icon"/><span>Back to Home</span></a>
+               </div>
+            </div>
+            <p class="card-body" style="margin-top:0.75rem;">Philadelphia, PA | (610) 427-9675 | <a href="https://www.linkedin.com/in/robert-scales-a2543b176/" target="_blank" rel="noopener noreferrer" class="software-inline-link">LinkedIn</a></p>
          </section>
       </main>
-      <footer class="footer">
-         <div class="\1">
-            <div class="footer-top">
-               <div class="footer-brand">
-                  <div class="\1"><img src="https://api.iconify.design/lucide-code-2.svg?color=%23f8fafc" alt="Brand icon" class="footer-brand-icon"/></div>
-                  <span class="gjs-t-h2 footer-brand-name">DevWorks</span>
-               </div>
-               <nav class="footer-navigation"><a href="./index.html" class="gjs-t-link footer-link">Home</a><a href="./music.html" class="gjs-t-link footer-link">Music</a><a href="./software-development.html" class="gjs-t-link footer-link-active">Software Development</a>
-               </nav>
-            </div>
-            <div class="footer-bottom">
-               <p class="footer-copyright">© 2025 DevWorks. All rights reserved.</p>
-               <div class="footer-social"><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="footer-social-link-github"><img src="https://api.iconify.design/lucide-github.svg?color=%23f8fafc" alt="GitHub" class="footer-social-icon"/></a><a href="mailto:you@example.com" class="footer-social-link-email"><img src="https://api.iconify.design/lucide-mail.svg?color=%23f8fafc" alt="Email" class="footer-social-icon"/></a><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="footer-social-link-linkedin"><img src="https://api.iconify.design/lucide-linkedin.svg?color=%23f8fafc" alt="LinkedIn" class="footer-social-icon"/></a></div>
-            </div>
-         </div>
-      </footer>
+
+      <script>
+         const menuToggle = document.getElementById('menu-toggle');
+         const navList = document.getElementById('software-nav-list');
+
+         menuToggle.addEventListener('click', () => {
+           navList.classList.toggle('active');
+         });
+
+         document.addEventListener('click', (event) => {
+           if (!menuToggle.contains(event.target) && !navList.contains(event.target)) {
+             navList.classList.remove('active');
+           }
+         });
+
+         const banner = document.querySelector('.banner-container');
+         const fadeDistance = 300;
+
+         window.addEventListener('scroll', () => {
+           const scrollY = window.scrollY;
+           const opacity = Math.max(0, 1 - scrollY / fadeDistance);
+           banner.style.opacity = opacity;
+           banner.style.pointerEvents = opacity === 0 ? 'none' : 'auto';
+         });
+      </script>
    </body>
 </html>
