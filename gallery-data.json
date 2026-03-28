@@ -13,21 +13,220 @@
       "label": "Digital"
     },
     {
+      "id": "installation",
+      "label": "Installation"
+    },
+    {
       "id": "paintings",
       "label": "Paintings"
     },
     {
+      "id": "photography",
+      "label": "Photography"
+    },
+    {
       "id": "portraits-and-figures",
       "label": "Portraits And Figures"
+    },
+    {
+      "id": "sculpture",
+      "label": "Sculpture"
+    },
+    {
+      "id": "sketches",
+      "label": "Sketches"
     }
   ],
   "artworks": [
+    {
+      "filename": "2023-05-01_13-56-48_UTC_6.webp",
+      "path": "assets/images/art-page-auto/clothing/2023-05-01_13-56-48_UTC_6.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2023-05-01_13-56-48_UTC_7.webp",
+      "path": "assets/images/art-page-auto/clothing/2023-05-01_13-56-48_UTC_7.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_10.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_10.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_11.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_11.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_4.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_4.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_5.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_5.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_6.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_6.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_7.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_7.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_8.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_8.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "2026-01-03_11-16-31_UTC_9.jpg",
+      "path": "assets/images/art-page-auto/clothing/2026-01-03_11-16-31_UTC_9.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
     {
       "filename": "2d.jpg",
       "path": "assets/images/art-page-auto/clothing/2d.jpg",
       "title": "",
       "medium": "",
       "description": "",
+      "section": "clothing"
+    },
+    {
+      "filename": "abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "path": "assets/images/art-page-auto/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "path": "assets/images/art-page-auto/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "path": "assets/images/art-page-auto/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
+      "path": "assets/images/art-page-auto/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
       "section": "clothing"
     },
     {
@@ -79,54 +278,6 @@
       "section": "clothing"
     },
     {
-      "filename": "WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
-      "path": "assets/images/art-page-auto/clothing/WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing"
-    },
-    {
-      "filename": "abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
-      "path": "assets/images/art-page-auto/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
-      "title": "",
-      "displayTitle": true,
-      "medium": "",
-      "description": "",
-      "displayDescription": true,
-      "section": "clothing"
-    },
-    {
-      "filename": "abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
-      "path": "assets/images/art-page-auto/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
-      "title": "",
-      "displayTitle": true,
-      "medium": "",
-      "description": "",
-      "displayDescription": true,
-      "section": "clothing"
-    },
-    {
-      "filename": "guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
-      "path": "assets/images/art-page-auto/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
-      "title": "",
-      "displayTitle": true,
-      "medium": "",
-      "description": "",
-      "displayDescription": true,
-      "section": "clothing"
-    },
-    {
-      "filename": "guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
-      "path": "assets/images/art-page-auto/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
-      "title": "",
-      "displayTitle": true,
-      "medium": "",
-      "description": "",
-      "displayDescription": true,
-      "section": "clothing"
-    },
-    {
       "filename": "lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg",
       "path": "assets/images/art-page-auto/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg",
       "title": "",
@@ -144,6 +295,14 @@
       "medium": "",
       "description": "",
       "displayDescription": true,
+      "section": "clothing"
+    },
+    {
+      "filename": "WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
+      "path": "assets/images/art-page-auto/clothing/WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
       "section": "clothing"
     },
     {
@@ -176,6 +335,149 @@
       "title": "",
       "medium": "",
       "description": "",
+      "section": "core"
+    },
+    {
+      "filename": "2020-10-28_04-11-24_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2020-10-28_04-11-24_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2021-01-01_04-28-19_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2021-01-01_04-28-19_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2021-02-09_17-15-16_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2021-02-09_17-15-16_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2024-04-29_09-01-51_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2024-04-29_09-01-51_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-01-03_08-59-15_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/core/2026-01-03_08-59-15_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-01-03_10-42-21_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2026-01-03_10-42-21_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-01-03_10-48-20_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2026-01-03_10-48-20_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-01-03_11-54-04_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2026-01-03_11-54-04_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-01-03_20-23-28_UTC.jpg",
+      "path": "assets/images/art-page-auto/core/2026-01-03_20-23-28_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-02-21_17-59-49_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/core/2026-02-21_17-59-49_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-02-21_17-59-49_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/core/2026-02-21_17-59-49_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-02-21_17-59-49_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/core/2026-02-21_17-59-49_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "core"
+    },
+    {
+      "filename": "2026-02-21_17-59-49_UTC_4.jpg",
+      "path": "assets/images/art-page-auto/core/2026-02-21_17-59-49_UTC_4.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
       "section": "core"
     },
     {
@@ -213,14 +515,6 @@
     {
       "filename": "3b.png",
       "path": "assets/images/art-page-auto/core/3b.png",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "core"
-    },
-    {
-      "filename": "3d.jpg",
-      "path": "assets/images/art-page-auto/core/3d.jpg",
       "title": "",
       "medium": "",
       "description": "",
@@ -395,6 +689,61 @@
       "section": "core"
     },
     {
+      "filename": "2019-03-10_09-53-27_UTC.jpg",
+      "path": "assets/images/art-page-auto/digital/2019-03-10_09-53-27_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "digital"
+    },
+    {
+      "filename": "2019-03-10_09-59-55_UTC.jpg",
+      "path": "assets/images/art-page-auto/digital/2019-03-10_09-59-55_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "digital"
+    },
+    {
+      "filename": "2021-04-13_06-30-53_UTC.jpg",
+      "path": "assets/images/art-page-auto/digital/2021-04-13_06-30-53_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "digital"
+    },
+    {
+      "filename": "2021-07-21_20-33-01_UTC.jpg",
+      "path": "assets/images/art-page-auto/digital/2021-07-21_20-33-01_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "digital"
+    },
+    {
+      "filename": "2026-01-05_08-03-32_UTC.jpg",
+      "path": "assets/images/art-page-auto/digital/2026-01-05_08-03-32_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "digital"
+    },
+    {
       "filename": "EMM_Idea_5.png",
       "path": "assets/images/art-page-auto/digital/EMM_Idea_5.png",
       "title": "",
@@ -429,6 +778,39 @@
       "section": "digital"
     },
     {
+      "filename": "2019-12-21_13-22-07_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/installation/2019-12-21_13-22-07_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "installation"
+    },
+    {
+      "filename": "2019-12-21_13-22-07_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/installation/2019-12-21_13-22-07_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "installation"
+    },
+    {
+      "filename": "2019-12-21_13-22-07_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/installation/2019-12-21_13-22-07_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "installation"
+    },
+    {
       "filename": "10c.jpg",
       "path": "assets/images/art-page-auto/paintings/10c.jpg",
       "title": "",
@@ -450,6 +832,171 @@
       "title": "",
       "medium": "",
       "description": "",
+      "section": "paintings"
+    },
+    {
+      "filename": "2022-09-05_10-11-58_UTC_1.webp",
+      "path": "assets/images/art-page-auto/paintings/2022-09-05_10-11-58_UTC_1.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2022-09-05_10-11-58_UTC_3.webp",
+      "path": "assets/images/art-page-auto/paintings/2022-09-05_10-11-58_UTC_3.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2022-09-05_10-11-58_UTC_4.webp",
+      "path": "assets/images/art-page-auto/paintings/2022-09-05_10-11-58_UTC_4.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2023-05-01_13-56-48_UTC_5.webp",
+      "path": "assets/images/art-page-auto/paintings/2023-05-01_13-56-48_UTC_5.webp",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2024-07-24_03-16-48_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/paintings/2024-07-24_03-16-48_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2024-07-24_03-16-48_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/paintings/2024-07-24_03-16-48_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2024-07-24_03-16-48_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/paintings/2024-07-24_03-16-48_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2024-07-24_03-36-58_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/paintings/2024-07-24_03-36-58_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2024-07-24_03-36-58_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/paintings/2024-07-24_03-36-58_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2026-01-03_10-07-18_UTC.jpg",
+      "path": "assets/images/art-page-auto/paintings/2026-01-03_10-07-18_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2026-01-03_10-08-26_UTC.jpg",
+      "path": "assets/images/art-page-auto/paintings/2026-01-03_10-08-26_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2026-01-03_10-09-58_UTC.jpg",
+      "path": "assets/images/art-page-auto/paintings/2026-01-03_10-09-58_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2026-01-03_11-46-10_UTC.jpg",
+      "path": "assets/images/art-page-auto/paintings/2026-01-03_11-46-10_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2026-01-03_11-46-51_UTC.jpg",
+      "path": "assets/images/art-page-auto/paintings/2026-01-03_11-46-51_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "paintings"
+    },
+    {
+      "filename": "2026-01-03_11-59-43_UTC.jpg",
+      "path": "assets/images/art-page-auto/paintings/2026-01-03_11-59-43_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
       "section": "paintings"
     },
     {
@@ -557,6 +1104,776 @@
       "section": "paintings"
     },
     {
+      "filename": "2018-12-30_22-23-09_UTC_8.jpg",
+      "path": "assets/images/art-page-auto/photography/2018-12-30_22-23-09_UTC_8.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2018-12-30_22-23-09_UTC_9.jpg",
+      "path": "assets/images/art-page-auto/photography/2018-12-30_22-23-09_UTC_9.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-04_00-19-07_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-04_00-19-07_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-04_00-28-25_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-04_00-28-25_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-04_00-45-48_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-04_00-45-48_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-04_00-48-33_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-04_00-48-33_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-17_03-43-18_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-17_03-43-18_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-17_06-21-49_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-17_06-21-49_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-03-30_01-35-06_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-03-30_01-35-06_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-04-03_03-07-03_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-04-03_03-07-03_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-04-24_20-05-15_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-04-24_20-05-15_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-04-28_04-54-37_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-04-28_04-54-37_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-05-12_05-08-19_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-05-12_05-08-19_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-05-17_01-57-52_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-05-17_01-57-52_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-05-17_02-00-19_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-05-17_02-00-19_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-05-18_23-09-29_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-05-18_23-09-29_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-06-20_03-28-58_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-06-20_03-28-58_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-06-20_03-38-38_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-06-20_03-38-38_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-02_01-26-28_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-02_01-26-28_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-04_07-22-34_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-04_07-22-34_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-04_07-33-24_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-04_07-33-24_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-06_04-50-59_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-06_04-50-59_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-23_08-04-53_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-23_08-04-53_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-25_07-37-33_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-25_07-37-33_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-25_07-39-56_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-25_07-39-56_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-07-30_23-44-28_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-07-30_23-44-28_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-08-12_23-58-07_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-08-12_23-58-07_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-08-13_00-16-41_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-08-13_00-16-41_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-08-13_00-39-35_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-08-13_00-39-35_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-08-13_00-43-22_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-08-13_00-43-22_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-10-17_20-32-23_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-10-17_20-32-23_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-10-17_23-49-50_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-10-17_23-49-50_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2019-10-17_23-51-09_UTC.jpg",
+      "path": "assets/images/art-page-auto/photography/2019-10-17_23-51-09_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "photography"
+    },
+    {
+      "filename": "2025-03-07_07-33-56_UTC.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2025-03-07_07-33-56_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_10.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_10.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_11.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_11.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_12.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_12.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_13.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_13.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_4.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_4.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_5.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_5.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_6.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_6.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_7.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_7.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_8.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_8.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_08-44-11_UTC_9.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_08-44-11_UTC_9.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-05-45_UTC.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-05-45_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_10.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_10.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_11.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_11.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_12.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_12.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_13.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_13.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_14.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_14.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_15.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_15.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_16.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_16.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_17.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_17.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_18.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_18.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_4.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_4.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_5.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_5.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_6.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_6.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_7.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_7.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_8.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_8.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-40-51_UTC_9.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-40-51_UTC_9.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_09-55-26_UTC.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_09-55-26_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_11-38-04_UTC.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_11-38-04_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_11-49-06_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_11-49-06_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2026-01-03_11-49-06_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/portraits-and-figures/2026-01-03_11-49-06_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "portraits-and-figures"
+    },
+    {
       "filename": "WhatsApp Image 2025-11-05 at 00.00.29_10ecc7ed.jpg",
       "path": "assets/images/art-page-auto/portraits-and-figures/WhatsApp Image 2025-11-05 at 00.00.29_10ecc7ed.jpg",
       "title": "",
@@ -595,6 +1912,113 @@
       "medium": "",
       "description": "",
       "section": "portraits-and-figures"
+    },
+    {
+      "filename": "2020-02-20_04-11-03_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/sculpture/2020-02-20_04-11-03_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sculpture"
+    },
+    {
+      "filename": "3d.jpg",
+      "path": "assets/images/art-page-auto/sculpture/3d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "sculpture"
+    },
+    {
+      "filename": "2026-01-03_08-01-59_UTC.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-01-59_UTC.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-51-18_UTC_1.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-51-18_UTC_1.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-51-18_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-51-18_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-51-18_UTC_3.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-51-18_UTC_3.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-51-18_UTC_4.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-51-18_UTC_4.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-51-18_UTC_5.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-51-18_UTC_5.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-51-18_UTC_9.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-51-18_UTC_9.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
+    },
+    {
+      "filename": "2026-01-03_08-59-15_UTC_2.jpg",
+      "path": "assets/images/art-page-auto/sketches/2026-01-03_08-59-15_UTC_2.jpg",
+      "title": "",
+      "displayTitle": true,
+      "showInGallery": true,
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "sketches"
     }
   ],
   "projects": [
@@ -655,6 +2079,14 @@
     }
   ],
   "archivedArtworks": [
+    {
+      "filename": "3d.jpg",
+      "path": "assets/images/art-page-auto/core/3d.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "core"
+    },
     {
       "filename": "_EMM_Idea_5.png",
       "path": "assets/images/art-page-auto/digital/_EMM_Idea_5.png",
