@@ -1,311 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Music | Recovered Page</title>
+      <title>Music | Robert Scales</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <meta name="robots" content="index,follow">
-      <meta name="generator" content="GrapesJS Studio">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-      <link rel="stylesheet" href="./style.css">
+      <meta name="robots" content="index,follow"/>
+      <meta name="generator" content="GrapesJS Studio"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="./style.css"/>
+      <style>
+         .music-hero-layout {
+            display: grid;
+            grid-template-columns: 1.25fr 1fr;
+            gap: 1.25rem;
+            align-items: start;
+         }
+
+         .music-chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+         }
+
+         .music-chip {
+            border: 1px solid rgb(255 255 255 / 0.2);
+            border-radius: 9999px;
+            padding: 0.25rem 0.7rem;
+            color: rgb(226 232 240 / 1);
+            background: rgb(255 255 255 / 0.04);
+            font-size: 0.8rem;
+         }
+
+         .music-summary-card,
+         .music-embed-card,
+         .music-link-card {
+            border-radius: 0.95rem;
+            border: 1px solid rgb(255 255 255 / 0.12);
+            background: rgb(255 255 255 / 0.04);
+            padding: 1rem;
+         }
+
+         .music-summary-image {
+            width: 100%;
+            border-radius: 0.75rem;
+            border: 1px solid rgb(255 255 255 / 0.14);
+            margin-top: 0.9rem;
+         }
+
+         .music-section-stack {
+            display: grid;
+            gap: 1rem;
+         }
+
+         .music-two-col {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+         }
+
+         .music-embed-title {
+            margin: 0 0 0.2rem;
+            color: rgb(248 250 252 / 1);
+            font-size: 1.05rem;
+            line-height: 1.3;
+            font-weight: 600;
+         }
+
+         .music-embed-subtitle {
+            margin: 0 0 0.8rem;
+            color: rgb(148 163 184 / 1);
+            font-size: 0.9rem;
+         }
+
+         .music-embed-frame {
+            width: 100%;
+            border: 0;
+            border-radius: 0.75rem;
+            min-height: 180px;
+            background: rgb(15 17 21 / 1);
+         }
+
+         .music-inline-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 0.9rem;
+         }
+
+         .music-inline-link {
+            color: rgb(226 232 240 / 1);
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            text-underline-offset: 3px;
+         }
+
+         .music-inline-link:hover {
+            color: rgb(245 241 232 / 1);
+         }
+
+         .music-link-list {
+            margin: 0;
+            padding-left: 1rem;
+            display: grid;
+            gap: 0.55rem;
+            color: rgb(203 213 225 / 1);
+         }
+
+         .music-link-list a {
+            color: rgb(226 232 240 / 1);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+         }
+
+         .music-link-list a:hover {
+            color: rgb(245 241 232 / 1);
+         }
+
+         @media (max-width: 980px) {
+            .music-hero-layout,
+            .music-two-col {
+               grid-template-columns: 1fr;
+            }
+         }
+      </style>
    </head>
-   <body id="iw5txh" class="gjs-t-body body">
-      <div id="ibjprxn" class="banner-container">
-         <div class="banner-row">
-            <div class="banner-left-image-wrap"><img alt="Left Banner Image" loading="eager" src="https://cdn.grapesjs.com/workspaces/cmhcpm7od0h2jwix4as6ntgpx/assets/c8e18729-7a35-4397-a5f7-89f4a8ecdb85__leftimage.png" id="igciu-2" class="banner-left-image"/></div>
-            <div class="banner-center-logo-wrap"><img alt="Your Center Logo" loading="eager" src="https://cdn.grapesjs.com/workspaces/cmhcpm7od0h2jwix4as6ntgpx/assets/98c7093f-11f3-4519-815c-0830e385eb25__yourlogo.png" id="ir5or-2" class="banner-center-logo"/></div>
-            <div class="banner-right-image-wrap"><img alt="Right Banner Image" loading="eager" src="https://cdn.grapesjs.com/workspaces/cmhcpm7od0h2jwix4as6ntgpx/assets/9e9b8118-b572-4a0d-9feb-3817d1c40955__rightimage.png" id="ik1ik-2" class="banner-right-image"/></div>
-         </div>
-      </div>
-      <div id="i2jvp0m" class="navigation-container">
-         <ul id="i3m082e" class="navigation-list">
-            <li><a href="index.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-home.svg?color=white" alt="Home Icon" class="navigation-icon"/> <span>Home</span></a></li>
-            <li><a href="art.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-palette.svg?color=white" alt="Art Icon" class="navigation-icon"/> <span>Art</span></a></li>
-            <li><a href="animation.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-film.svg?color=white" alt="Animation Icon" class="navigation-icon"/> <span>Animation</span></a></li>
-            <li><a href="game-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-gamepad-2.svg?color=white" alt="Game Dev Icon" class="navigation-icon"/> <span>Game Development</span></a></li>
-            <li><a href="music.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-music-2.svg?color=white" alt="Music Icon" class="navigation-icon"/> <span>Music</span></a></li>
-            <li><a href="software-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-code-2.svg?color=white" alt="Software Icon" class="navigation-icon"/> <span>Software</span></a></li>
+   <body class="gjs-t-body body">
+      <div class="navigation-container">
+         <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <img src="https://api.iconify.design/lucide-menu.svg?color=white" alt="Menu" class="menu-icon"/>
+         </button>
+         <ul id="music-nav-list" class="navigation-list">
+            <li><a href="index.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-home.svg?color=white" alt="Home Icon" class="navigation-icon"/><span>Home</span></a></li>
+            <li><a href="art.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-palette.svg?color=white" alt="Art Icon" class="navigation-icon"/><span>Art</span></a></li>
+            <li><a href="animation.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-film.svg?color=white" alt="Animation Icon" class="navigation-icon"/><span>Animation</span></a></li>
+            <li><a href="game-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-gamepad-2.svg?color=white" alt="Game Dev Icon" class="navigation-icon"/><span>Game Development</span></a></li>
+            <li><a href="music.html" class="gjs-t-link navigation-link" aria-current="page"><img src="https://api.iconify.design/lucide-music-2.svg?color=white" alt="Music Icon" class="navigation-icon"/><span>Music</span></a></li>
+            <li><a href="software-development.html" class="gjs-t-link navigation-link"><img src="https://api.iconify.design/lucide-code-2.svg?color=white" alt="Software Icon" class="navigation-icon"/><span>Software</span></a></li>
          </ul>
       </div>
-      <main id="i16i2v" class="main-content">
-         <section id="iwdn4p" class="hero-section">
-            <div class="\1">
-               <div class="hero-text">
-                  <h1 class="gjs-t-h1 hero-title">Music Library</h1>
-                  <p class="hero-subtitle">Explore albums, projects, playlists, and music videos. Stream, download, and discover the sound behind Pulse Studio.</p>
-                  <div class="hero-actions"><a href="#featured" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play Featured</span></a><a href="#albums" class="secondary-button"><img src="https://api.iconify.design/lucide-library.svg?color=%23f8fafc" alt="Albums" class="button-icon"/><span class="button-text">Browse Albums</span></a></div>
-               </div>
-               <div class="hero-media">
-                  <div class="hero-media-card"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22album%20art%22&amp;w=1200&amp;h=800" alt="Featured Album Artwork" class="hero-image"/></div>
-               </div>
-            </div>
-         </section>
-         <section id="featured" class="featured-album-section">
-            <div class="section-header">
-               <h2 class="gjs-t-h2">Featured Album: Neon Echoes</h2>
-               <div class="section-actions"><a href="#platforms" class="gjs-t-link inline-link"><img src="https://api.iconify.design/lucide-external-link.svg?color=%23a78bfa" alt="Open" class="link-icon"/><span>Open on Platforms</span></a></div>
-            </div>
-            <div class="\1">
-               <div class="album-art-column">
-                  <div class="album-art-card"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22synthwave%20album%22&amp;w=1000&amp;h=1000" alt="Neon Echoes Cover" class="album-image"/></div>
-                  <div class="album-meta">
-                     <p>An electronic journey blending synthwave textures with modern pop structures. Produced and mixed at Pulse Studio.</p>
-                     <ul class="album-tags">
-                        <li class="tag-item">Synthwave</li>
-                        <li class="tag-item">Electronic</li>
-                        <li class="tag-item">Pop</li>
-                     </ul>
+
+      <div class="banner-container">
+         <div class="banner-row">
+            <div class="banner-left-image-wrap"><img alt="Left Banner Image" loading="eager" src="assets/images/left_image2.png" class="banner-left-image"/></div>
+            <div class="banner-center-logo-wrap"><img alt="Center Logo" loading="eager" src="assets/images/your_logo.png" class="banner-center-logo"/></div>
+            <div class="banner-right-image-wrap"><img alt="Right Banner Image" loading="eager" src="assets/images/right_image2.png" class="banner-right-image"/></div>
+         </div>
+      </div>
+
+      <main class="main-content">
+         <section class="hero-section">
+            <div class="music-hero-layout">
+               <div class="hero-text-block">
+                  <h1 class="gjs-t-h1 hero-title">Music Production and Scoring</h1>
+                  <p class="hero-subtitle">I compose and produce music for games, animation, and personal releases. This page collects project soundtracks, standalone tracks, and DJ sets in one place.</p>
+                  <div class="music-chip-list">
+                     <span class="music-chip">Game Soundtracks</span>
+                     <span class="music-chip">Animation Scoring</span>
+                     <span class="music-chip">Personal Releases</span>
+                     <span class="music-chip">DJ Sets</span>
+                  </div>
+                  <div class="music-inline-links">
+                     <a href="https://soundcloud.com/rob-scales-872757181" target="_blank" rel="noopener noreferrer" class="music-inline-link">Primary SoundCloud</a>
+                     <a href="#dj-sets" class="music-inline-link">Jump to DJ Sets</a>
+                     <a href="#personal" class="music-inline-link">Jump to Personal Tracks</a>
                   </div>
                </div>
-               <div class="tracklist-column">
-                  <div class="tracklist-card">
-                     <h3 class="tracklist-title">Tracks</h3>
-                     <ul class="tracklist">
-                        <li class="track-item">
-                           <img src="https://api.iconify.design/lucide-disc-3.svg?color=%23f8fafc" alt="Track Icon" class="track-icon"/>
-                           <div class="track-info">
-                              <p class="track-name">01. Midnight Drive</p>
-                              <p class="track-meta">4:12 • Synthwave</p>
-                           </div>
-                           <audio controls preload="none" class="audio-player">
-                              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
-                              Your browser does not support the audio element.
-                           </audio>
-                        </li>
-                        <li class="track-item">
-                           <img src="https://api.iconify.design/lucide-disc-3.svg?color=%23f8fafc" alt="Track Icon" class="track-icon"/>
-                           <div class="track-info">
-                              <p class="track-name">02. Neon Echoes</p>
-                              <p class="track-meta">3:58 • Electronic</p>
-                           </div>
-                           <audio controls preload="none" class="audio-player">
-                              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg"/>
-                              Your browser does not support the audio element.
-                           </audio>
-                        </li>
-                        <li class="track-item">
-                           <img src="https://api.iconify.design/lucide-disc-3.svg?color=%23f8fafc" alt="Track Icon" class="track-icon"/>
-                           <div class="track-info">
-                              <p class="track-name">03. City Lights</p>
-                              <p class="track-meta">4:45 • Pop</p>
-                           </div>
-                           <audio controls preload="none" class="audio-player">
-                              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg"/>
-                              Your browser does not support the audio element.
-                           </audio>
-                        </li>
-                        <li class="track-item">
-                           <img src="https://api.iconify.design/lucide-disc-3.svg?color=%23f8fafc" alt="Track Icon" class="track-icon"/>
-                           <div class="track-info">
-                              <p class="track-name">04. Afterglow</p>
-                              <p class="track-meta">5:01 • Ambient</p>
-                           </div>
-                           <audio controls preload="none" class="audio-player">
-                              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg"/>
-                              Your browser does not support the audio element.
-                           </audio>
-                        </li>
-                     </ul>
-                     <div class="album-ctas"><a href="#downloads" class="secondary-button"><img src="https://api.iconify.design/lucide-download.svg?color=%23f8fafc" alt="Download" class="button-icon"/><span class="button-text">Download Album</span></a><a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-headphones.svg?color=%230f1115" alt="Stream" class="button-icon"/><span>Stream Everywhere</span></a></div>
-                  </div>
+               <div class="music-summary-card">
+                  <h2 class="gjs-t-h2" style="font-size:1.2rem;margin-bottom:0.6rem;">What You Will Find Here</h2>
+                  <ul class="music-link-list" style="margin-bottom:0.8rem;">
+                     <li>Albums and singles written for game projects.</li>
+                     <li>Music contributions for animation work, including collaborators and personal animation projects.</li>
+                     <li>A separate personal album and recent favorites.</li>
+                     <li>DJ recordings including WKDU and House-Mixes sets.</li>
+                  </ul>
+                  <img src="assets/images/music/DJ_pic.png" alt="DJ and music production visual" class="music-summary-image"/>
                </div>
             </div>
          </section>
-         <section id="albums" class="albums-section">
-            <div class="section-header">
-               <h2 class="gjs-t-h2">Albums &amp; Projects</h2>
-               <a href="./index.html" class="gjs-t-link inline-link"><img src="https://api.iconify.design/lucide-home.svg?color=%23a78bfa" alt="Home" class="link-icon"/><span>Back to Home</span></a>
+
+         <section class="gallery-section" id="game-music">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Game Music and Soundtracks</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-gamepad-2.svg?color=%2394a3b8" alt="Game Music Icon" class="icon-images"/><span>Albums and tracks by project</span></div>
             </div>
-            <div class="\1">
-               <article class="album-card">
-                  <img src="https://app.grapesjs.com/api/assets/random-image?query=%22album%20cover%22&amp;w=1200&amp;h=800" alt="Aurora Fields Cover" class="album-card-image"/>
-                  <div class="album-card-body">
-                     <h3 class="album-card-title">Aurora Fields</h3>
-                     <p class="album-card-description">Organic instruments meet warm analog synths. Recorded live at sunset.</p>
-                     <div class="album-card-actions"><a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play</span></a><a href="#downloads" class="secondary-button"><img src="https://api.iconify.design/lucide-download.svg?color=%23f8fafc" alt="Download" class="button-icon"/><span class="button-text">Download</span></a></div>
-                  </div>
+            <div class="music-two-col">
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Untitled Strategy RPG</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1582192573&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                </article>
-               <article class="album-card">
-                  <img src="https://app.grapesjs.com/api/assets/random-image?query=%22electronic%20album%22&amp;w=1200&amp;h=800" alt="Static Bloom Cover" class="album-card-image"/>
-                  <div class="album-card-body">
-                     <h3 class="album-card-title">Static Bloom</h3>
-                     <p class="album-card-description">Glitch meets groove—tight rhythms and experimental textures.</p>
-                     <div class="album-card-actions"><a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play</span></a><a href="#downloads" class="secondary-button"><img src="https://api.iconify.design/lucide-download.svg?color=%23f8fafc" alt="Download" class="button-icon"/><span class="button-text">Download</span></a></div>
-                  </div>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Dungeon Diner</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1582192795&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                </article>
-               <article class="album-card">
-                  <img src="https://app.grapesjs.com/api/assets/random-image?query=%22lofi%20album%22&amp;w=1200&amp;h=800" alt="Loft Lines Cover" class="album-card-image"/>
-                  <div class="album-card-body">
-                     <h3 class="album-card-title">Loft Lines</h3>
-                     <p class="album-card-description">Lo-fi beats and airy vocals—perfect for late-night sessions.</p>
-                     <div class="album-card-actions"><a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play</span></a><a href="#downloads" class="secondary-button"><img src="https://api.iconify.design/lucide-download.svg?color=%23f8fafc" alt="Download" class="button-icon"/><span class="button-text">Download</span></a></div>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Next Stop, Philadelphia</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1435618660&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+               </article>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">SimulatioN: RusH Soundtrack</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255379332&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+               </article>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">SpreadLove</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255378762&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+               </article>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Project Spectrum Soundtrack</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255378096&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+               </article>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Harmony Home Soundtrack</h3>
+                  <p class="music-embed-subtitle">SoundCloud playlist</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255321822&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+               </article>
+
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Featured Game Singles</h3>
+                  <p class="music-embed-subtitle">Standalone tracks and themes</p>
+                  <div class="music-section-stack">
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1466332630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1264727821&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1046897797&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+                  <div class="music-inline-links">
+                     <a href="https://soundcloud.com/rob-scales-872757181/stratos-farm-main-theme?si=c63310d232104481b25177b7a72275b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" class="music-inline-link">Stratos Farm Main Theme</a>
                   </div>
                </article>
             </div>
          </section>
-         <section id="playlists" class="playlists-section">
-            <div class="section-header">
-               <h2 class="gjs-t-h2">Curated Playlists</h2>
-               <p class="section-subtitle">Handpicked sets for your mood and moments.</p>
+
+         <section class="statement-section" id="animation-scoring">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Animation Scoring</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-film.svg?color=%2394a3b8" alt="Animation Icon" class="icon-images"/><span>Recent and archival animation work</span></div>
             </div>
-            <div class="\1">
-               <article class="playlist-card">
-                  <img src="https://app.grapesjs.com/api/assets/random-image?query=%22playlist%20cover%22&amp;w=1200&amp;h=800" alt="Morning Flow" loading="lazy" class="playlist-image"/>
-                  <div class="playlist-body">
-                     <div class="playlist-header">
-                        <h3 class="playlist-title">Morning Flow</h3>
-                        <span class="playlist-count">24 tracks</span>
-                     </div>
-                     <p class="playlist-description">Start your day with uplifting instrumentals and warm vocals.</p>
-                     <a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play</span></a>
-                  </div>
+            <div class="music-two-col">
+               <article class="music-link-card">
+                  <h3 class="music-embed-title">Projects I Scored for Animation</h3>
+                  <ul class="music-link-list">
+                     <li><a href="https://www.instagram.com/p/DOghOZzjzhf/" target="_blank" rel="noopener noreferrer">Recent animation project (Instagram)</a></li>
+                     <li><a href="https://www.instagram.com/p/CDRb-CKj1yt/" target="_blank" rel="noopener noreferrer">Earlier collaboration (Instagram)</a></li>
+                  </ul>
                </article>
-               <article class="playlist-card">
-                  <img src="https://app.grapesjs.com/api/assets/random-image?query=%22night%20playlist%22&amp;w=1200&amp;h=800" alt="Night Drive" loading="lazy" class="playlist-image"/>
-                  <div class="playlist-body">
-                     <div class="playlist-header">
-                        <h3 class="playlist-title">Night Drive</h3>
-                        <span class="playlist-count">18 tracks</span>
-                     </div>
-                     <p class="playlist-description">Bass-driven selections for highways and neon-lit streets.</p>
-                     <a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play</span></a>
-                  </div>
+               <article class="music-link-card">
+                  <h3 class="music-embed-title">My Own Animations with Original Music</h3>
+                  <ul class="music-link-list">
+                     <li><a href="https://www.youtube.com/watch?v=nYi4FO9PfKg" target="_blank" rel="noopener noreferrer">YouTube animation project 1</a></li>
+                     <li><a href="https://youtu.be/jI5MXCJhKVs" target="_blank" rel="noopener noreferrer">YouTube animation project 2</a></li>
+                  </ul>
                </article>
-               <article class="playlist-card">
-                  <img src="https://app.grapesjs.com/api/assets/random-image?query=%22focus%20playlist%22&amp;w=1200&amp;h=800" alt="Deep Focus" loading="lazy" class="playlist-image"/>
-                  <div class="playlist-body">
-                     <div class="playlist-header">
-                        <h3 class="playlist-title">Deep Focus</h3>
-                        <span class="playlist-count">32 tracks</span>
-                     </div>
-                     <p class="playlist-description">Minimal beats and ambient beds for heads-down work.</p>
-                     <a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Play</span></a>
+            </div>
+         </section>
+
+         <section class="gallery-section" id="personal">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Personal Releases and Recent Favorites</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-disc-3.svg?color=%2394a3b8" alt="Album Icon" class="icon-images"/><span>Non-project releases</span></div>
+            </div>
+            <div class="music-two-col">
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Personal Album on Spotify</h3>
+                  <p class="music-embed-subtitle">Independent release not tied to a specific game/animation project</p>
+                  <iframe class="music-embed-frame" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="https://open.spotify.com/embed/album/3K3DioYcZlHGhVSAGAwAJz?utm_source=generator"></iframe>
+               </article>
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Recent Tracks I Personally Like</h3>
+                  <p class="music-embed-subtitle">SoundCloud singles</p>
+                  <div class="music-section-stack">
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2003080279&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                     <iframe class="music-embed-frame" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2006511479&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                     <iframe class="music-embed-frame" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2003044243&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                   </div>
                </article>
             </div>
          </section>
-         <section id="videos" class="videos-section">
-            <div class="section-header">
-               <h2 class="gjs-t-h2">Music Videos</h2>
-               <p class="section-subtitle">Visual stories that expand the soundscape.</p>
+
+         <section class="statement-section" id="dj-sets">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">DJ Work</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-headphones.svg?color=%2394a3b8" alt="DJ Icon" class="icon-images"/><span>WKDU and House-Mixes sets</span></div>
             </div>
-            <div class="\1">
-               <article class="video-card">
-                  <div class="\1">
-                     <img src="https://app.grapesjs.com/api/assets/random-image?query=%22music%20video%22&amp;w=1600&amp;h=900" alt="Neon Echoes Video" loading="lazy" class="video-thumb"/>
-                     <div class="video-overlay"><a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Watch</span></a></div>
-                  </div>
-                  <div class="video-body">
-                     <h3 class="video-title">Neon Echoes — Official Video</h3>
-                     <p class="video-description">Shot across urban nights with analog lenses and practical neon lighting.</p>
-                  </div>
+            <div class="music-two-col">
+               <article class="music-link-card">
+                  <h3 class="music-embed-title">DJ Profiles and Direct Links</h3>
+                  <ul class="music-link-list">
+                     <li><a href="https://soundcloud.com/wkdu/2025emm-rob-scales" target="_blank" rel="noopener noreferrer">WKDU Electronic Music Marathon 2025 set</a></li>
+                     <li><a href="https://www.house-mixes.com/rsa06" target="_blank" rel="noopener noreferrer">House-Mixes profile</a></li>
+                  </ul>
                </article>
-               <article class="video-card">
-                  <div class="\1">
-                     <img src="https://app.grapesjs.com/api/assets/random-image?query=%22live%20session%22&amp;w=1600&amp;h=900" alt="Loft Lines Live" loading="lazy" class="video-thumb"/>
-                     <div class="video-overlay"><a href="#platforms" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-play.svg?color=%230f1115" alt="Play" class="button-icon"/><span>Watch</span></a></div>
-                  </div>
-                  <div class="video-body">
-                     <h3 class="video-title">Loft Lines — Live Session</h3>
-                     <p class="video-description">Captured in one take—raw performance and intimate sound design.</p>
+               <article class="music-embed-card">
+                  <h3 class="music-embed-title">Selected DJ Set Embeds</h3>
+                  <p class="music-embed-subtitle">Ordered with your most played set last</p>
+                  <div class="music-section-stack">
+                     <iframe class="music-embed-frame" height="180" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/2025-07-04/classic?theme=dark"></iframe>
+                     <iframe class="music-embed-frame" height="400" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/rec-2025-12-17/picture?theme=dark"></iframe>
+                     <iframe class="music-embed-frame" height="180" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/2025-07-03-mostly-hip-hop/classic?theme=dark"></iframe>
                   </div>
                </article>
             </div>
          </section>
-         <section id="platforms" class="platforms-section">
-            <div class="section-header">
-               <h2 class="gjs-t-h2">Stream on Your Favorite Platform</h2>
-               <p class="section-subtitle">Find our music across major platforms. Tap to open and start listening.</p>
-            </div>
-            <div class="\1">
-               <a href="#" class="group platform-button">
-                  <span class="group-hover:border-cyan-300/40 platform-icon-wrapper"><img src="https://api.iconify.design/lucide-headphones.svg?color=%23f8fafc" alt="Streaming" class="platform-icon"/></span>
-                  <div>
-                     <p class="platform-name">Spotify</p>
-                     <p class="platform-subtitle">Follow and add to playlists</p>
-                  </div>
-               </a>
-               <a href="#" class="group platform-button">
-                  <span class="group-hover:border-cyan-300/40 platform-icon-wrapper"><img src="https://api.iconify.design/lucide-music.svg?color=%23f8fafc" alt="Apple Music" class="platform-icon"/></span>
-                  <div>
-                     <p class="platform-name">Apple Music</p>
-                     <p class="platform-subtitle">Sync across your devices</p>
-                  </div>
-               </a>
-               <a href="#" class="group platform-button">
-                  <span class="group-hover:border-cyan-300/40 platform-icon-wrapper"><img src="https://api.iconify.design/lucide-youtube.svg?color=%23f8fafc" alt="YouTube" class="platform-icon"/></span>
-                  <div>
-                     <p class="platform-name">YouTube</p>
-                     <p class="platform-subtitle">Watch videos and sessions</p>
-                  </div>
-               </a>
-               <a href="#" class="group platform-button">
-                  <span class="group-hover:border-cyan-300/40 platform-icon-wrapper"><img src="https://api.iconify.design/lucide-badge-percent.svg?color=%23f8fafc" alt="Bandcamp" class="platform-icon"/></span>
-                  <div>
-                     <p class="platform-name">Bandcamp</p>
-                     <p class="platform-subtitle">Support direct downloads</p>
-                  </div>
-               </a>
-            </div>
-         </section>
-         <section id="downloads" class="downloads-section">
-            <div class="\1">
-               <div class="downloads-text">
-                  <h2 class="gjs-t-h2 section-title">Downloads &amp; Extras</h2>
-                  <p class="section-subtitle">Get lossless audio, stems, and artwork packs. Ideal for DJs, editors, and collectors.</p>
-                  <div class="downloads-buttons"><a href="#" class="gjs-t-button primary-button"><img src="https://api.iconify.design/lucide-file-audio-2.svg?color=%230f1115" alt="FLAC" class="button-icon"/><span>FLAC Album</span></a><a href="#" class="secondary-button"><img src="https://api.iconify.design/lucide-folder-archive.svg?color=%23f8fafc" alt="Stems" class="button-icon"/><span class="button-text">Stems Pack</span></a><a href="#" class="secondary-button"><img src="https://api.iconify.design/lucide-image.svg?color=%23f8fafc" alt="Artwork" class="button-icon"/><span class="button-text">Artwork Bundle</span></a></div>
-               </div>
-               <div class="downloads-media">
-                  <div class="downloads-card"><img src="https://app.grapesjs.com/api/assets/random-image?query=%22studio%20gear%22&amp;w=1200&amp;h=900" alt="Studio Gear" loading="lazy" class="downloads-image"/></div>
+
+         <section class="contact-section">
+            <div class="contact-header">
+               <h2 class="gjs-t-h2">Get in touch</h2>
+               <div class="contact-actions">
+                  <a href="https://soundcloud.com/rob-scales-872757181" target="_blank" rel="noopener noreferrer" class="gjs-t-button contact-button">SoundCloud</a>
+                  <a href="./index.html" class="gjs-t-link back-home-link"><img src="https://api.iconify.design/lucide-arrow-left.svg?color=%23a78bfa" alt="Back Icon" class="back-icon"/><span>Back to Home</span></a>
                </div>
             </div>
-         </section>
-         <section id="subscribe" class="newsletter-section">
-            <div class="newsletter-card">
-               <div class="\1">
-                  <div class="newsletter-text">
-                     <h2 class="gjs-t-h2 section-title">Stay in the loop</h2>
-                     <p class="section-subtitle">Subscribe for new releases, session invites, and behind-the-scenes content.</p>
-                  </div>
-                  <form method="get" aria-label="Subscribe to newsletter" class="newsletter-form">
-                     <label for="email" class="form-label">Email address</label>
-                     <div class="form-controls"><input type="email" id="email" name="email" required placeholder="you@example.com" aria-required="true" aria-describedby="email-help" class="form-input"/><button type="submit" class="gjs-t-button primary-button"><span>Subscribe</span></button></div>
-                     <p id="email-help" class="form-help">We respect your inbox. Unsubscribe anytime.</p>
-                     <div class="form-consent"><input type="checkbox" id="consent" name="consent" aria-checked="false" class="peer form-checkbox"/><label for="consent" class="peer-focus:outline-none form-label">I agree to receive updates and promotional emails.</label></div>
-                  </form>
-               </div>
-            </div>
+            <p class="card-body" style="margin-top:0.75rem;">For music collaboration, scoring, or DJ bookings, reach out via SoundCloud profile messages or social links.</p>
          </section>
       </main>
-      <footer id="contact-2" class="footer">
-         <div class="\1">
-            <div class="\1">
-               <div class="footer-brand">
-                  <div class="footer-brand-row"><span class="brand-icon"><img src="https://api.iconify.design/lucide-music-4.svg?color=%23f8fafc" alt="Logo" class="icon-image"/></span><span class="brand-title">Pulse Studio</span></div>
-                  <p class="footer-description">Independent studio crafting electronic and cinematic music. Built with attention to tone and texture.</p>
-               </div>
-               <div class="footer-links">
-                  <h4 class="footer-heading">Explore</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="./index.html" class="gjs-t-link footer-link">Home</a></li>
-                     <li><a href="./music.html" class="gjs-t-link footer-link">Music</a></li>
-                     <li><a href="#videos" class="gjs-t-link footer-link">Videos</a></li>
-                     <li><a href="#downloads" class="gjs-t-link footer-link">Downloads</a></li>
-                  </ul>
-               </div>
-               <div class="footer-contact">
-                  <h4 class="footer-heading">Contact</h4>
-                  <ul class="footer-contacts-list">
-                     <li class="footer-contact-item"><img src="https://api.iconify.design/lucide-mail.svg?color=%23f8fafc" alt="Email" class="contact-icon"/><span>hello@pulsestudio.audio</span></li>
-                     <li class="footer-contact-item"><img src="https://api.iconify.design/lucide-map-pin.svg?color=%23f8fafc" alt="Location" class="contact-icon"/><span>Berlin, DE</span></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="footer-bottom">
-               <p class="footer-copyright">© 2025 Pulse Studio. All rights reserved.</p>
-               <div class="footer-socials"><a href="#" class="social-link"><img src="https://api.iconify.design/lucide-instagram.svg?color=%23f8fafc" alt="Instagram" class="social-icon"/><span class="gjs-t-link">Instagram</span></a><a href="#" class="social-link"><img src="https://api.iconify.design/lucide-twitter.svg?color=%23f8fafc" alt="Twitter" class="social-icon"/><span class="gjs-t-link">Twitter</span></a><a href="#" class="social-link"><img src="https://api.iconify.design/lucide-youtube.svg?color=%23f8fafc" alt="YouTube" class="social-icon"/><span class="gjs-t-link">YouTube</span></a></div>
-            </div>
-         </div>
-      </footer>
+
+      <script>
+         const menuToggle = document.getElementById('menu-toggle');
+         const navList = document.getElementById('music-nav-list');
+
+         menuToggle.addEventListener('click', () => {
+           navList.classList.toggle('active');
+         });
+
+         document.addEventListener('click', (event) => {
+           if (!menuToggle.contains(event.target) && !navList.contains(event.target)) {
+             navList.classList.remove('active');
+           }
+         });
+
+         const banner = document.querySelector('.banner-container');
+         const fadeDistance = 300;
+
+         window.addEventListener('scroll', () => {
+           const scrollY = window.scrollY;
+           const opacity = Math.max(0, 1 - scrollY / fadeDistance);
+           banner.style.opacity = opacity;
+           banner.style.pointerEvents = opacity === 0 ? 'none' : 'auto';
+         });
+      </script>
    </body>
 </html>
