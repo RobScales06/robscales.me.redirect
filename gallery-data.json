@@ -218,10 +218,9 @@
       "thumbnailPath": "assets/images/art-page-previews/clothing/2d.jpg.thumb.webp"
     },
     {
-      "filename": "abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
-      "path": "assets/images/art-page-auto/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "filename": "IMG_20260103_060004_104.jpg",
+      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_104.jpg",
       "title": "",
-      "displayTitle": true,
       "medium": "",
       "description": "",
       "displayDescription": true,
@@ -230,10 +229,9 @@
       "thumbnailPath": "assets/images/art-page-previews/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg.thumb.webp"
     },
     {
-      "filename": "abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
-      "path": "assets/images/art-page-auto/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "filename": "IMG_20260103_060004_162.jpg",
+      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_162.jpg",
       "title": "",
-      "displayTitle": true,
       "medium": "",
       "description": "",
       "displayDescription": true,
@@ -242,16 +240,89 @@
       "thumbnailPath": "assets/images/art-page-previews/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg.thumb.webp"
     },
     {
-      "filename": "guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
-      "path": "assets/images/art-page-auto/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "filename": "IMG_20260103_060004_211.jpg",
+      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_211.jpg",
       "title": "",
-      "displayTitle": true,
       "medium": "",
       "description": "",
       "displayDescription": true,
       "section": "clothing",
       "previewPath": "assets/images/art-page-previews/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg.preview.webp",
       "thumbnailPath": "assets/images/art-page-previews/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg.thumb.webp"
+    },
+    {
+      "filename": "IMG_20260103_060004_254.jpg",
+      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_254.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "displayDescription": true,
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg.thumb.webp"
+    },
+    {
+      "filename": "IMG_20260103_060004_286.jpg",
+      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_286.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_104.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_104.jpg.thumb.webp"
+    },
+    {
+      "filename": "IMG_20260103_060004_304.jpg",
+      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_304.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_162.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_162.jpg.thumb.webp"
+    },
+    {
+      "filename": "WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
+      "path": "assets/images/art-page-auto/clothing/WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
+      "title": "",
+      "medium": "",
+      "description": "",
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_211.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_211.jpg.thumb.webp"
+    },
+    {
+      "filename": "abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "path": "assets/images/art-page-auto/clothing/abstract-philadelphia-skyline-by-rob-scales-unisex-heavy-cotton-tee_1713923840014.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_254.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_254.jpg.thumb.webp"
+    },
+    {
+      "filename": "abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "path": "assets/images/art-page-auto/clothing/abstract-rocky-by-rob-scales-unisex-heavy-cotton-tee_1712834671603.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_286.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_286.jpg.thumb.webp"
+    },
+    {
+      "filename": "guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "path": "assets/images/art-page-auto/clothing/guacamaya-bag-cotton-canvas-tote-bag_1713932467580.jpg",
+      "title": "",
+      "displayTitle": true,
+      "medium": "",
+      "description": "",
+      "section": "clothing",
+      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_304.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_304.jpg.thumb.webp"
     },
     {
       "filename": "guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg",
@@ -262,68 +333,8 @@
       "description": "",
       "displayDescription": true,
       "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/guacamaya-roja-by-rob-scales-unisex-heavy-cotton-tee_1713930858539.jpg.thumb.webp"
-    },
-    {
-      "filename": "IMG_20260103_060004_104.jpg",
-      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_104.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_104.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_104.jpg.thumb.webp"
-    },
-    {
-      "filename": "IMG_20260103_060004_162.jpg",
-      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_162.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_162.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_162.jpg.thumb.webp"
-    },
-    {
-      "filename": "IMG_20260103_060004_211.jpg",
-      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_211.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_211.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_211.jpg.thumb.webp"
-    },
-    {
-      "filename": "IMG_20260103_060004_254.jpg",
-      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_254.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_254.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_254.jpg.thumb.webp"
-    },
-    {
-      "filename": "IMG_20260103_060004_286.jpg",
-      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_286.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_286.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_286.jpg.thumb.webp"
-    },
-    {
-      "filename": "IMG_20260103_060004_304.jpg",
-      "path": "assets/images/art-page-auto/clothing/IMG_20260103_060004_304.jpg",
-      "title": "",
-      "medium": "",
-      "description": "",
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_304.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/IMG_20260103_060004_304.jpg.thumb.webp"
+      "previewPath": "assets/images/art-page-previews/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg.thumb.webp"
     },
     {
       "filename": "lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg",
@@ -334,25 +345,14 @@
       "description": "",
       "displayDescription": true,
       "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/lempira-abstract-tee-by-rob-scales-unisex-heavy-cotton-tee_1711055518525.jpg.thumb.webp"
+      "previewPath": "assets/images/art-page-previews/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg.preview.webp",
+      "thumbnailPath": "assets/images/art-page-previews/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg.thumb.webp"
     },
     {
       "filename": "liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg",
       "path": "assets/images/art-page-auto/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg",
       "title": "",
       "displayTitle": true,
-      "medium": "",
-      "description": "",
-      "displayDescription": true,
-      "section": "clothing",
-      "previewPath": "assets/images/art-page-previews/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg.preview.webp",
-      "thumbnailPath": "assets/images/art-page-previews/clothing/liberty-bell-by-rob-scales-unisex-heavy-cotton-tee_1713925279186.jpg.thumb.webp"
-    },
-    {
-      "filename": "WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
-      "path": "assets/images/art-page-auto/clothing/WhatsApp Image 2025-01-07 at 04.32.38_21f437da.jpg",
-      "title": "",
       "medium": "",
       "description": "",
       "section": "clothing",
