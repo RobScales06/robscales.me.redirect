@@ -10,6 +10,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="./style.css"/>
+      <link rel="icon" type="image/png" href="assets/images/your_logo.png"/>
       <style>
          .music-hero-layout {
             display: grid;
@@ -118,9 +119,174 @@
             color: rgb(245 241 232 / 1);
          }
 
+         .music-spotlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+         }
+
+         .music-spotlight-card {
+            border-radius: 0.95rem;
+            border: 1px solid rgb(255 255 255 / 0.12);
+            background: linear-gradient(145deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.02));
+            padding: 1rem;
+            display: grid;
+            gap: 0.7rem;
+         }
+
+         .music-spotlight-title {
+            color: rgb(248 250 252 / 1);
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 600;
+         }
+
+         .music-spotlight-text {
+            margin: 0;
+            color: rgb(203 213 225 / 1);
+            font-size: 0.95rem;
+         }
+
+         .music-spotlight-link {
+            justify-self: start;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 0.85rem;
+            border-radius: 9999px;
+            border: 1px solid rgb(255 255 255 / 0.2);
+            color: rgb(245 241 232 / 1);
+            text-decoration: none;
+            background: rgb(255 255 255 / 0.04);
+         }
+
+         .music-spotlight-link:hover {
+            border-color: rgb(245 241 232 / 0.65);
+            background: rgb(245 241 232 / 0.12);
+         }
+
+         .music-video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+         }
+
+         .music-video-frame {
+            width: 100%;
+            border: 0;
+            border-radius: 0.75rem;
+            background: rgb(15 17 21 / 1);
+         }
+
+         .music-video-frame.instagram {
+            min-height: 640px;
+         }
+
+         .music-video-frame.youtube {
+            min-height: 315px;
+         }
+
+         .housemix-frame {
+            min-height: 220px;
+         }
+
+         .instagram-embed-wrapper {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background: rgb(15 17 21 / 1);
+            border: 1px solid rgb(255 255 255 / 0.12);
+            padding: 0.35rem;
+         }
+
+         .instagram-embed-wrapper .instagram-media {
+            margin: 0 auto !important;
+            min-width: 0 !important;
+            width: 100% !important;
+            max-width: 540px !important;
+         }
+
+         .instagram-embed-wrapper.instagram-embed-small .instagram-media {
+            max-width: 300px !important;
+         }
+
+         .td-compact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.75rem;
+         }
+
+         .td-compact-item {
+            display: grid;
+            gap: 0.35rem;
+         }
+
+         .td-compact-label {
+            margin: 0;
+            color: rgb(148 163 184 / 1);
+            font-size: 0.82rem;
+         }
+
+         .embed-cluster {
+            display: grid;
+            gap: 0.85rem;
+         }
+
+         .embed-cluster-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.9rem;
+         }
+
+         .embed-cluster-item {
+            display: grid;
+            gap: 0.45rem;
+         }
+
+         .embed-cluster-title {
+            margin: 0;
+            color: rgb(248 250 252 / 1);
+            font-size: 0.95rem;
+            line-height: 1.35;
+            font-weight: 600;
+         }
+
+         .personal-layout {
+            display: grid;
+            grid-template-columns: 1.45fr 1fr;
+            gap: 1rem;
+            align-items: start;
+         }
+
+         .personal-right-stack {
+            display: grid;
+            gap: 1rem;
+         }
+
+         .personal-album-frame {
+            min-height: 760px;
+         }
+
          @media (max-width: 980px) {
             .music-hero-layout,
-            .music-two-col {
+            .music-two-col,
+            .music-spotlight-grid,
+            .music-video-grid {
+               grid-template-columns: 1fr;
+            }
+
+            .music-video-frame.instagram {
+               min-height: 560px;
+            }
+
+            .td-compact-grid {
+               grid-template-columns: 1fr;
+            }
+
+            .embed-cluster-grid {
+               grid-template-columns: 1fr;
+            }
+
+            .personal-layout {
                grid-template-columns: 1fr;
             }
          }
@@ -163,12 +329,12 @@
                   </div>
                   <div class="music-inline-links">
                      <a href="https://soundcloud.com/rob-scales-872757181" target="_blank" rel="noopener noreferrer" class="music-inline-link">Primary SoundCloud</a>
-                     <a href="#dj-sets" class="music-inline-link">Jump to DJ Sets</a>
-                     <a href="#personal" class="music-inline-link">Jump to Personal Tracks</a>
+                     <a href="#dj-sets" class="music-inline-link">Explore DJ Sets</a>
+                     <a href="#personal" class="music-inline-link">Explore Personal Releases</a>
                   </div>
                </div>
                <div class="music-summary-card">
-                  <h2 class="gjs-t-h2" style="font-size:1.2rem;margin-bottom:0.6rem;">What You Will Find Here</h2>
+                  <h2 class="gjs-t-h2" style="font-size:1.2rem;margin-bottom:0.6rem;">Portfolio Highlights</h2>
                   <ul class="music-link-list" style="margin-bottom:0.8rem;">
                      <li>Albums and singles written for game projects.</li>
                      <li>Music contributions for animation work, including collaborators and personal animation projects.</li>
@@ -180,67 +346,79 @@
             </div>
          </section>
 
+         <section class="gallery-section" id="music-focus">
+            <div class="gallery-header">
+               <h2 class="gjs-t-h2">Featured Music Areas</h2>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-compass.svg?color=%2394a3b8" alt="Focus Icon" class="icon-images"/><span>Game, personal releases, and DJ sets</span></div>
+            </div>
+            <div class="music-spotlight-grid">
+               <article class="music-spotlight-card">
+                  <h3 class="music-spotlight-title">Game Soundtracks</h3>
+                  <p class="music-spotlight-text">Original compositions built for gameplay pacing, worldbuilding, and character-driven scenes.</p>
+                  <a href="#game-music" class="music-spotlight-link">Explore game music</a>
+               </article>
+               <article class="music-spotlight-card">
+                  <h3 class="music-spotlight-title">Personal Releases</h3>
+                  <p class="music-spotlight-text">Independent album work and newer standalone tracks outside project-specific scoring.</p>
+                  <a href="#personal" class="music-spotlight-link">Explore personal releases</a>
+               </article>
+               <article class="music-spotlight-card">
+                  <h3 class="music-spotlight-title">DJ Sets</h3>
+                  <p class="music-spotlight-text">Live mixes and recordings spanning electronic, club, and open-format sessions.</p>
+                  <a href="#dj-sets" class="music-spotlight-link">Explore DJ sets</a>
+               </article>
+            </div>
+         </section>
+
          <section class="gallery-section" id="game-music">
             <div class="gallery-header">
                <h2 class="gjs-t-h2">Game Music and Soundtracks</h2>
                <div class="gallery-meta"><img src="https://api.iconify.design/lucide-gamepad-2.svg?color=%2394a3b8" alt="Game Music Icon" class="icon-images"/><span>Albums and tracks by project</span></div>
             </div>
-            <div class="music-two-col">
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Untitled Strategy RPG</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1582192573&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Dungeon Diner</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1582192795&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Next Stop, Philadelphia</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1435618660&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">SimulatioN: RusH Soundtrack</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255379332&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">SpreadLove</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255378762&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Project Spectrum Soundtrack</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255378096&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Harmony Home Soundtrack</h3>
-                  <p class="music-embed-subtitle">SoundCloud playlist</p>
-                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255321822&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-               </article>
-
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Featured Game Singles</h3>
-                  <p class="music-embed-subtitle">Standalone tracks and themes</p>
-                  <div class="music-section-stack">
-                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1466332630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1264727821&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1046897797&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <article class="music-embed-card embed-cluster">
+               <h3 class="music-embed-title">Game Soundtrack Playlists</h3>
+               <div class="embed-cluster-grid">
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Untitled Strategy RPG</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1582192573&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                   </div>
-                  <div class="music-inline-links">
-                     <a href="https://soundcloud.com/rob-scales-872757181/stratos-farm-main-theme?si=c63310d232104481b25177b7a72275b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" class="music-inline-link">Stratos Farm Main Theme</a>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Dungeon Diner</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1582192795&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                   </div>
-               </article>
-            </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Next Stop, Philadelphia</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1435618660&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">SimulatioN: RusH Soundtrack</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255379332&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">SpreadLove</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255378762&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Project Spectrum Soundtrack</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255378096&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Harmony Home Soundtrack</p>
+                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1255321822&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+               </div>
+            </article>
+            <article class="music-embed-card embed-cluster" style="margin-top:1rem;">
+               <h3 class="music-embed-title">Featured Game Singles</h3>
+               <div class="embed-cluster-grid">
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1466332630&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1264727821&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1046897797&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+               </div>
+               <div class="music-inline-links">
+                  <a href="https://soundcloud.com/rob-scales-872757181/stratos-farm-main-theme?si=c63310d232104481b25177b7a72275b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" class="music-inline-link">Stratos Farm Main Theme</a>
+               </div>
+            </article>
          </section>
 
          <section class="statement-section" id="animation-scoring">
@@ -248,22 +426,36 @@
                <h2 class="gjs-t-h2">Animation Scoring</h2>
                <div class="gallery-meta"><img src="https://api.iconify.design/lucide-film.svg?color=%2394a3b8" alt="Animation Icon" class="icon-images"/><span>Recent and archival animation work</span></div>
             </div>
-            <div class="music-two-col">
-               <article class="music-link-card">
-                  <h3 class="music-embed-title">Projects I Scored for Animation</h3>
-                  <ul class="music-link-list">
-                     <li><a href="https://www.instagram.com/p/DOghOZzjzhf/" target="_blank" rel="noopener noreferrer">Recent animation project (Instagram)</a></li>
-                     <li><a href="https://www.instagram.com/p/CDRb-CKj1yt/" target="_blank" rel="noopener noreferrer">Earlier collaboration (Instagram)</a></li>
-                  </ul>
-               </article>
-               <article class="music-link-card">
-                  <h3 class="music-embed-title">My Own Animations with Original Music</h3>
-                  <ul class="music-link-list">
-                     <li><a href="https://www.youtube.com/watch?v=nYi4FO9PfKg" target="_blank" rel="noopener noreferrer">YouTube animation project 1</a></li>
-                     <li><a href="https://youtu.be/jI5MXCJhKVs" target="_blank" rel="noopener noreferrer">YouTube animation project 2</a></li>
-                  </ul>
-               </article>
-            </div>
+            <article class="music-embed-card embed-cluster">
+               <h3 class="music-embed-title">Instagram Animation Work</h3>
+               <div class="embed-cluster-grid">
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Latest Original Animation</p>
+                     <iframe class="music-video-frame instagram" src="https://www.instagram.com/p/DTDKgjMDvSr/embed" allowtransparency="true"></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Recent Animation Collaboration</p>
+                     <iframe class="music-video-frame instagram" src="https://www.instagram.com/p/DOghOZzjzhf/embed" allowtransparency="true"></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Earlier Animation Collaboration</p>
+                     <iframe class="music-video-frame instagram" src="https://www.instagram.com/p/CDRb-CKj1yt/embed" allowtransparency="true"></iframe>
+                  </div>
+               </div>
+            </article>
+            <article class="music-embed-card embed-cluster" style="margin-top:1rem;">
+               <h3 class="music-embed-title">YouTube Animation Projects</h3>
+               <div class="embed-cluster-grid">
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Original Animation Project 1</p>
+                     <iframe class="music-video-frame youtube" src="https://www.youtube.com/embed/nYi4FO9PfKg" title="Original Animation Project 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="embed-cluster-item">
+                     <p class="embed-cluster-title">Original Animation Project 2</p>
+                     <iframe class="music-video-frame youtube" src="https://www.youtube.com/embed/jI5MXCJhKVs" title="Original Animation Project 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </article>
          </section>
 
          <section class="gallery-section" id="personal">
@@ -271,47 +463,91 @@
                <h2 class="gjs-t-h2">Personal Releases and Recent Favorites</h2>
                <div class="gallery-meta"><img src="https://api.iconify.design/lucide-disc-3.svg?color=%2394a3b8" alt="Album Icon" class="icon-images"/><span>Non-project releases</span></div>
             </div>
-            <div class="music-two-col">
+            <div class="personal-layout">
                <article class="music-embed-card">
                   <h3 class="music-embed-title">Personal Album on Spotify</h3>
                   <p class="music-embed-subtitle">Independent release not tied to a specific game/animation project</p>
-                  <iframe class="music-embed-frame" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="https://open.spotify.com/embed/album/3K3DioYcZlHGhVSAGAwAJz?utm_source=generator"></iframe>
+                  <iframe class="music-embed-frame personal-album-frame" height="760" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="https://open.spotify.com/embed/album/3K3DioYcZlHGhVSAGAwAJz?utm_source=generator"></iframe>
                </article>
-               <article class="music-embed-card">
-                  <h3 class="music-embed-title">Recent Tracks I Personally Like</h3>
-                  <p class="music-embed-subtitle">SoundCloud singles</p>
-                  <div class="music-section-stack">
-                     <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2003080279&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                     <iframe class="music-embed-frame" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2006511479&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                     <iframe class="music-embed-frame" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2003044243&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                  </div>
-               </article>
+               <div class="personal-right-stack">
+                  <article class="music-embed-card">
+                     <h3 class="music-embed-title">Recent Original Singles</h3>
+                     <p class="music-embed-subtitle">Selected newer independent tracks</p>
+                     <div class="music-section-stack">
+                        <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2003080279&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <iframe class="music-embed-frame" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2006511479&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <iframe class="music-embed-frame" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2003044243&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                     </div>
+                  </article>
+                  <article class="music-embed-card">
+                     <h3 class="music-embed-title">Justice Remixes</h3>
+                     <p class="music-embed-subtitle">Recent remix clips</p>
+                     <div class="embed-cluster-grid">
+                        <div class="embed-cluster-item">
+                           <p class="embed-cluster-title">Neverender</p>
+                           <div class="instagram-embed-wrapper instagram-embed-small">
+                              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTH0kCQDsJG/" data-instgrm-version="14"></blockquote>
+                           </div>
+                        </div>
+                        <div class="embed-cluster-item">
+                           <p class="embed-cluster-title">Pleasure</p>
+                           <div class="instagram-embed-wrapper instagram-embed-small">
+                              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTHxrlDDoXo/" data-instgrm-version="14"></blockquote>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+               </div>
             </div>
          </section>
 
          <section class="statement-section" id="dj-sets">
             <div class="gallery-header">
                <h2 class="gjs-t-h2">DJ Work</h2>
-               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-headphones.svg?color=%2394a3b8" alt="DJ Icon" class="icon-images"/><span>WKDU and House-Mixes sets</span></div>
+               <div class="gallery-meta"><img src="https://api.iconify.design/lucide-headphones.svg?color=%2394a3b8" alt="DJ Icon" class="icon-images"/><span>WKDU, House-Mixes, and TouchDesigner visuals</span></div>
             </div>
             <div class="music-two-col">
                <article class="music-link-card">
-                  <h3 class="music-embed-title">DJ Profiles and Direct Links</h3>
-                  <ul class="music-link-list">
-                     <li><a href="https://soundcloud.com/wkdu/2025emm-rob-scales" target="_blank" rel="noopener noreferrer">WKDU Electronic Music Marathon 2025 set</a></li>
-                     <li><a href="https://www.house-mixes.com/rsa06" target="_blank" rel="noopener noreferrer">House-Mixes profile</a></li>
-                  </ul>
+                  <h3 class="music-embed-title">DJ Profiles and Featured Set</h3>
+                  <p class="music-embed-subtitle">WKDU Electronic Music Marathon 2025 (embedded)</p>
+                  <iframe class="music-embed-frame" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/wkdu/2025emm-rob-scales&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                </article>
                <article class="music-embed-card">
-                  <h3 class="music-embed-title">Selected DJ Set Embeds</h3>
-                  <p class="music-embed-subtitle">Ordered with your most played set last</p>
+                  <h3 class="music-embed-title">Featured Mixes</h3>
+                  <div class="music-inline-links" style="margin-top:0;margin-bottom:0.8rem;">
+                     <a href="https://www.house-mixes.com/rsa06" target="_blank" rel="noopener noreferrer" class="music-spotlight-link">View full House-Mixes profile</a>
+                  </div>
                   <div class="music-section-stack">
-                     <iframe class="music-embed-frame" height="180" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/2025-07-04/classic?theme=dark"></iframe>
-                     <iframe class="music-embed-frame" height="400" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/rec-2025-12-17/picture?theme=dark"></iframe>
-                     <iframe class="music-embed-frame" height="180" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/2025-07-03-mostly-hip-hop/classic?theme=dark"></iframe>
+                     <iframe class="music-embed-frame housemix-frame" height="220" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/2025-07-04/classic?theme=dark"></iframe>
+                     <iframe class="music-embed-frame housemix-frame" height="220" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/rec-2025-12-17/classic?theme=dark"></iframe>
+                     <iframe class="music-embed-frame housemix-frame" height="220" allow="autoplay; encrypted-media" src="https://www.house-mixes.com/embed/rsa06/2025-07-03-mostly-hip-hop/classic?theme=dark"></iframe>
                   </div>
                </article>
             </div>
+            <article class="music-embed-card" style="margin-top:1rem;">
+               <h3 class="music-embed-title">TouchDesigner Visuals</h3>
+               <p class="music-embed-subtitle">Recent clips from my DJ visual workflow</p>
+               <div class="td-compact-grid">
+                  <div class="td-compact-item">
+                     <p class="td-compact-label">Clip 1</p>
+                     <div class="instagram-embed-wrapper">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DVEyvGfDMvg/" data-instgrm-version="14"></blockquote>
+                     </div>
+                  </div>
+                  <div class="td-compact-item">
+                     <p class="td-compact-label">Clip 2</p>
+                     <div class="instagram-embed-wrapper">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DVCt3_IDLkD/" data-instgrm-version="14"></blockquote>
+                     </div>
+                  </div>
+                  <div class="td-compact-item">
+                     <p class="td-compact-label">Clip 3</p>
+                     <div class="instagram-embed-wrapper">
+                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DVE5I5oDNNg/" data-instgrm-version="14"></blockquote>
+                     </div>
+                  </div>
+               </div>
+            </article>
          </section>
 
          <section class="contact-section">
@@ -350,5 +586,6 @@
            banner.style.pointerEvents = opacity === 0 ? 'none' : 'auto';
          });
       </script>
+      <script async src="https://www.instagram.com/embed.js"></script>
    </body>
 </html>

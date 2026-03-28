@@ -8,6 +8,7 @@
       <meta name="generator" content="GrapesJS Studio"/>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="./style.css">
+      <link rel="icon" type="image/png" href="assets/images/your_logo.png"/>
       <style>
          .home-highlights{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);} 
          .home-highlights .preview-grid{margin-top:1.5rem;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:1rem;}
@@ -117,23 +118,6 @@
          document.addEventListener('click', (e) => {
            if (!menuToggle.contains(e.target) && !navList.contains(e.target)) {
              navList.classList.remove('active');
-           }
-         });
-         
-         // Fade out banner on scroll
-         const banner = document.querySelector('.banner-container');
-         const fadeDistance = 300; // Distance in pixels to complete fade
-         
-         window.addEventListener('scroll', () => {
-           const scrollY = window.scrollY;
-           const opacity = Math.max(0, 1 - (scrollY / fadeDistance));
-           banner.style.opacity = opacity;
-           
-           // Hide completely and disable pointer events when fully transparent
-           if (opacity === 0) {
-             banner.style.pointerEvents = 'none';
-           } else {
-             banner.style.pointerEvents = 'auto';
            }
          });
       </script>
