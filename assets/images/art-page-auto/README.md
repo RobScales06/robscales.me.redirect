@@ -19,6 +19,35 @@ This folder contains subfolders for organizing your artwork. Each subfolder auto
 
 .jpg, .jpeg, .png, .gif, .webp, .svg
 
+## Metadata visibility controls
+
+The gallery is metadata-first. Filenames are not shown as captions by default.
+
+Use `gallery-data.json` to control what appears:
+
+- `title`: text for caption/lightbox title
+- `medium`: optional short line shown next to title in caption
+- `description`: longer lightbox description
+- `displayTitle`: set to `false` to hide title/medium for this artwork
+- `displayDescription`: set to `false` to hide lightbox description for this artwork
+
+Example artwork entry:
+
+```json
+{
+    "filename": "piece1.jpg",
+    "path": "assets/images/art-page-auto/core-works/piece1.jpg",
+    "title": "Untitled Figure Study",
+    "displayTitle": true,
+    "medium": "Acrylic on panel",
+    "description": "Explores gesture and compression in seated poses.",
+    "displayDescription": true,
+    "section": "core-works"
+}
+```
+
+Tip: Keep `title`/`description` filled in for archival purposes, then use display flags to decide what is visible on the site.
+
 ## Example structure:
 
 ```

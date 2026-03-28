@@ -4,6 +4,7 @@ const path = require('path');
 // Configuration
 const GALLERY_FOLDER = path.join(__dirname, 'assets', 'images', 'art-page-auto');
 const DATA_FILE = path.join(__dirname, 'gallery-data.json');
+const BACKUP_FILE = path.join(__dirname, 'gallery-data.backup.json');
 const SUPPORTED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'];
 
 /**
@@ -83,15 +84,20 @@ function scanGalleryFolder() {
  */
 function loadGalleryData() {
   if (!fs.existsSync(DATA_FILE)) {
-    return { sections: [], artworks: [] };
+    return { sections: [], artworks: [], archivedArtworks: [] };
   }
 
   try {
     const content = fs.readFileSync(DATA_FILE, 'utf8');
-    return JSON.parse(content);
+    const parsed = JSON.parse(content);
+    return {
+      sections: Array.isArray(parsed.sections) ? parsed.sections : [],
+      artworks: Array.isArray(parsed.artworks) ? parsed.artworks : [],
+      archivedArtworks: Array.isArray(parsed.archivedArtworks) ? parsed.archivedArtworks : []
+    };
   } catch (error) {
     console.error('Error reading gallery data:', error);
-    return { sections: [], artworks: [] };
+    return { sections: [], artworks: [], archivedArtworks: [] };
   }
 }
 
@@ -101,17 +107,33 @@ function loadGalleryData() {
 function mergeGalleryData(existing, scanned) {
   const merged = {
     sections: [...scanned.sections],
-    artworks: []
+    artworks: [],
+    archivedArtworks: []
   };
 
-  // Create a map of existing artworks for quick lookup
-  const existingMap = new Map(
-    existing.artworks.map(art => [art.filename, art])
+  // Include archived records in matching so metadata can be restored if files return.
+  const allExisting = [
+    ...(existing.artworks || []),
+    ...(existing.archivedArtworks || [])
+  ];
+
+  // Path is the primary key for metadata to avoid filename collisions across sections.
+  const existingByPath = new Map(
+    allExisting
+      .filter(art => art && art.path)
+      .map(art => [art.path, art])
+  );
+
+  // Keep filename fallback so older metadata can still be matched after this update.
+  const existingByFilename = new Map(
+    allExisting
+      .filter(art => art && art.filename)
+      .map(art => [art.filename, art])
   );
 
   // Process each scanned image
   scanned.images.forEach(image => {
-    const existingArt = existingMap.get(image.filename);
+    const existingArt = existingByPath.get(image.relativePath) || existingByFilename.get(image.filename);
     
     if (existingArt) {
       // Keep existing data but update section if file moved
@@ -126,12 +148,25 @@ function mergeGalleryData(existing, scanned) {
         filename: image.filename,
         path: image.relativePath,
         title: '',
+        displayTitle: true,
         medium: '',
         description: '',
+        displayDescription: true,
         section: image.section
       });
     }
   });
+
+  // Keep metadata for missing files in an archive instead of dropping it.
+  const scannedPaths = new Set(scanned.images.map(image => image.relativePath));
+  const archivedByPath = new Map();
+  allExisting.forEach(art => {
+    if (!art || !art.path) return;
+    if (!scannedPaths.has(art.path)) {
+      archivedByPath.set(art.path, art);
+    }
+  });
+  merged.archivedArtworks = Array.from(archivedByPath.values());
 
   return merged;
 }
@@ -141,6 +176,13 @@ function mergeGalleryData(existing, scanned) {
  */
 function saveGalleryData(data) {
   fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), 'utf8');
+}
+
+/**
+ * Save a backup snapshot of gallery metadata before overwrite.
+ */
+function saveGalleryBackup(data) {
+  fs.writeFileSync(BACKUP_FILE, JSON.stringify(data, null, 2), 'utf8');
 }
 
 /**
@@ -158,6 +200,7 @@ function syncGallery() {
   console.log(`\nTotal images: ${scanned.images.length}\n`);
 
   const existing = loadGalleryData();
+  saveGalleryBackup(existing);
   const merged = mergeGalleryData(existing, scanned);
 
   const newImages = merged.artworks.filter(art => !art.title);
@@ -167,10 +210,12 @@ function syncGallery() {
   console.log('✅ Gallery data synced successfully!');
   console.log(`   - ${merged.sections.length} sections`);
   console.log(`   - ${merged.artworks.length} total artworks`);
+  console.log(`   - ${merged.archivedArtworks.length} archived metadata records`);
   if (newImages.length > 0) {
     console.log(`   - ${newImages.length} new artworks need metadata (title, medium, description)`);
   }
   console.log(`\n📄 Updated: ${DATA_FILE}`);
+  console.log(`📄 Backup: ${BACKUP_FILE}`);
 }
 
 // Run the sync

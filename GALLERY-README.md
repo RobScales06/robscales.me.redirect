@@ -62,18 +62,35 @@ After sync, edit `gallery-data.json` to add details:
       "filename": "my-artwork.jpg",
       "path": "assets/images/art-page-auto/core-works/my-artwork.jpg",
       "title": "Midnight Dreams",
+      "displayTitle": true,
       "medium": "Oil on Canvas",
       "description": "An exploration of nocturnal themes",
+      "displayDescription": true,
       "section": "core-works"
     }
   ]
 }
 ```
 
+### Visibility Flags
+
+- `displayTitle`: if `false`, caption title/medium are hidden for that artwork
+- `displayDescription`: if `false`, the lightbox description is hidden
+
+Both flags default to `true` for newly added artworks.
+
+Recommended workflow:
+
+1. Keep metadata in JSON for long-term organization
+2. Use visibility flags to control what appears publicly
+3. Avoid filename-based display rules to keep auto-sync simple and predictable
+
 ## ✨ Features
 
 - **Auto-detection**: New images are automatically found and added
 - **Metadata preservation**: Your titles/descriptions are never overwritten
+- **Safe sync backup**: A `gallery-data.backup.json` snapshot is written before each sync
+- **Archive retention**: Missing-file metadata is moved to `archivedArtworks` instead of being dropped
 - **Flexible organization**: Create any subfolder structure you want
 - **GitHub integration**: Works seamlessly with GitHub Pages
 - **No database needed**: Everything is file-based and static
@@ -115,10 +132,17 @@ The GitHub Action runs when:
 ## 📦 Files Created
 
 - `gallery-data.json` - Artwork metadata database
+- `gallery-data.backup.json` - Pre-sync backup snapshot of metadata
 - `sync-gallery.js` - Folder scanner & JSON updater
 - `.github/workflows/sync-gallery.yml` - GitHub Action config
 - `package.json` - NPM scripts
 - `assets/images/art-page-auto/` - Image storage folder
+
+## 🛡️ Data Safety Notes
+
+- Sync no longer drops metadata for missing files; it moves those records to `archivedArtworks` in `gallery-data.json`.
+- If a file returns later (same path or filename), its metadata can be restored by sync matching.
+- To permanently remove metadata, delete the record from `archivedArtworks` manually.
 
 ## 💡 Tips
 

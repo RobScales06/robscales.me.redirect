@@ -71,14 +71,14 @@
       </main>
       <div aria-hidden="true" id="lightbox-root" class="lightbox-root">
          <div class="lightbox-backdrop"></div>
-         <div class="\1">
+         <div class="lightbox-container">
             <div class="lightbox-panel">
                <div class="lightbox-header">
                   <h3 id="lightbox-title" class="lightbox-title">Artwork</h3>
                   <div class="lightbox-controls"><button type="button" id="lightbox-prev" aria-label="Previous" class="prev-button"><img src="https://api.iconify.design/lucide-chevron-left.svg?color=%23f8fafc" alt="Prev" class="prev-icon"/></button><button type="button" id="lightbox-next" aria-label="Next" class="next-button"><img src="https://api.iconify.design/lucide-chevron-right.svg?color=%23f8fafc" alt="Next" class="next-icon"/></button><button type="button" id="lightbox-close" aria-label="Close" class="close-button"><img src="https://api.iconify.design/lucide-x.svg?color=%23f8fafc" alt="Close" class="close-icon"/></button></div>
                </div>
                <div class="lightbox-body">
-                  <div class="\1"><img id="lightbox-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+" alt="" class="lightbox-image"/></div>
+                  <div class="lightbox-image-wrapper"><img id="lightbox-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+" alt="" class="lightbox-image"/></div>
                   <div class="lightbox-details">
                      <h4 id="lightbox-artwork-title" class="lightbox-artwork-title">Title</h4>
                      <p id="lightbox-artwork-desc" class="lightbox-artwork-description">Description</p>
@@ -89,158 +89,89 @@
          </div>
       </div>
       <script>
-         const artworks = [{
-             title: 'Luminous Echo',
-             desc: 'Abstract gradients and soft noise textures exploring light resonance.',
-             category: 'Abstract',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22abstract%20painting%22&w=1600&h=1000',
-             alt: 'Abstract composition with vibrant gradients'
-           },
-           {
-             title: 'Neon City',
-             desc: 'Digital painting capturing late-night motion through rain and light.',
-             category: 'Digital',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22cyberpunk%20digital%20art%22&w=1600&h=1000',
-             alt: 'Futuristic neon-lit cityscape digital painting'
-           },
-           {
-             title: 'Line Study I',
-             desc: 'Gestural figure study emphasizing rhythm and contour.',
-             category: 'Sketch',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22charcoal%20sketch%22&w=1600&h=1000',
-             alt: 'Charcoal sketch of figure with expressive strokes'
-           },
-           {
-             title: 'Portrait in Violet',
-             desc: 'Color study focusing on mood and edge softness.',
-             category: 'Portrait',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22portrait%20painting%22&w=1600&h=1000',
-             alt: 'Painterly portrait with violet hues'
-           },
-           {
-             title: 'Dawn Over Ridge',
-             desc: 'Atmospheric landscape with layered depth and soft light.',
-             category: 'Landscape',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22landscape%20painting%22&w=1600&h=1000',
-             alt: 'Landscape painting of mountain ridge at dawn'
-           },
-           {
-             title: 'Synth Bloom',
-             desc: 'Generative-inspired floral forms with neon accents.',
-             category: 'Digital',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22digital%20flora%20art%22&w=1600&h=1000',
-             alt: 'Digital art of synthetic floral shapes'
-           },
-           {
-             title: 'Field of Noise',
-             desc: 'Exploration of pattern density and spatial rhythm.',
-             category: 'Abstract',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22abstract%20texture%20art%22&w=1600&h=1000',
-             alt: 'Abstract texture field with granular noise'
-           },
-           {
-             title: 'Golden Hour',
-             desc: 'Warm-toned portrait study focusing on light falloff.',
-             category: 'Portrait',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22portrait%20illustration%22&w=1600&h=1000',
-             alt: 'Illustrated portrait bathed in golden light'
-           },
-           {
-             title: 'Urban Lines',
-             desc: 'Ink sketch capturing perspective and city rhythm.',
-             category: 'Sketch',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22urban%20sketch%22&w=1600&h=1000',
-             alt: 'Urban sketch of street corner and architecture'
-           },
-           {
-             title: 'Coastal Drift',
-             desc: 'Brushwork studies of water motion and shoreline forms.',
-             category: 'Landscape',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22coastal%20landscape%20art%22&w=1600&h=1000',
-             alt: 'Coastal landscape with waves and cliffs'
-           },
-           {
-             title: 'Prism Veil',
-             desc: 'Layered geometry suggesting depth and refraction.',
-             category: 'Digital',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22geometric%20digital%20art%22&w=1600&h=1000',
-             alt: 'Geometric digital art with prism shapes'
-           },
-           {
-             title: 'Aurora Mesh',
-             desc: 'Soft-blended hues inspired by northern lights.',
-             category: 'Abstract',
-             largeSrc: 'https://app.grapesjs.com/api/assets/random-image?query=%22color%20field%20painting%22&w=1600&h=1000',
-             alt: 'Color field abstract with aurora-like gradients'
-           }
-         ];
-         
-         const root = document.getElementById('lightbox-root');
-         const imgEl = document.getElementById('lightbox-image');
-         const titleEl = document.getElementById('lightbox-artwork-title');
-         const descEl = document.getElementById('lightbox-artwork-desc');
-         const catEl = document.getElementById('lightbox-artwork-category');
-         const headerTitleEl = document.getElementById('lightbox-title');
-         
-         let currentIndex = 0;
-         const openLightbox = (index) => {
-           currentIndex = index;
-           const art = artworks[currentIndex];
-           imgEl.src = art.largeSrc;
-           imgEl.alt = art.alt;
-           titleEl.textContent = art.title;
-           headerTitleEl.textContent = art.title;
-           descEl.textContent = art.desc;
-           catEl.textContent = art.category;
-           root.classList.remove('hidden');
-           root.setAttribute('aria-hidden', 'false');
-           document.body.classList.add('overflow-hidden');
-           document.getElementById('lightbox-close').focus();
-         };
-         
-         const closeLightbox = () => {
-           root.classList.add('hidden');
-           root.setAttribute('aria-hidden', 'true');
-           document.body.classList.remove('overflow-hidden');
-         };
-         
-         const next = () => openLightbox((currentIndex + 1) % artworks.length);
-         const prev = () => openLightbox((currentIndex - 1 + artworks.length) % artworks.length);
-         
-         document.querySelectorAll('[data-gjs-name="Artwork Button"]').forEach(btn => {
-           btn.addEventListener('click', () => openLightbox(parseInt(btn.dataset.index, 10)));
-         });
-         document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-         document.getElementById('lightbox-next').addEventListener('click', next);
-         document.getElementById('lightbox-prev').addEventListener('click', prev);
-         root.addEventListener('click', (e) => {
-           if (e.target === root || e.target.getAttribute('data-gjs-name') === 'Lightbox Backdrop') closeLightbox();
-         });
-         document.addEventListener('keydown', (e) => {
-           if (root.classList.contains('hidden')) return;
-           if (e.key === 'Escape') closeLightbox();
-           if (e.key === 'ArrowRight') next();
-           if (e.key === 'ArrowLeft') prev();
-         });
-         
-         const chips = document.querySelectorAll('[data-gjs-name="Filter Chip"]');
-         const cards = document.querySelectorAll('[data-gjs-name="Artwork Card"]');
-         chips.forEach(chip => {
-           chip.addEventListener('click', () => {
-             chips.forEach(c => c.setAttribute('aria-pressed', 'false'));
-             chip.setAttribute('aria-pressed', 'true');
-             const filter = chip.dataset.filter;
-             cards.forEach(card => {
-               const cat = card.dataset.category;
-               if (filter === 'all' || cat === filter) {
-                 card.classList.remove('hidden');
-               } else {
-                 card.classList.add('hidden');
-               }
-             });
+         const artLightbox = (() => {
+           const root = document.getElementById('lightbox-root');
+           const imgEl = document.getElementById('lightbox-image');
+           const titleEl = document.getElementById('lightbox-artwork-title');
+           const descEl = document.getElementById('lightbox-artwork-desc');
+           const catEl = document.getElementById('lightbox-artwork-category');
+           const headerTitleEl = document.getElementById('lightbox-title');
+           const closeBtn = document.getElementById('lightbox-close');
+           const nextBtn = document.getElementById('lightbox-next');
+           const prevBtn = document.getElementById('lightbox-prev');
+
+           let currentItems = [];
+           let currentIndex = 0;
+
+           const renderCurrent = () => {
+             if (!currentItems.length) return;
+             const art = currentItems[currentIndex];
+             imgEl.src = art.path;
+            const showTitle = art.displayTitle !== false;
+            const showDescription = art.displayDescription !== false;
+            const titleRaw = art.title && art.title.trim() ? art.title.trim() : '';
+            const descriptionRaw = art.description && art.description.trim() ? art.description.trim() : (art.medium && art.medium.trim() ? art.medium.trim() : '');
+            const title = showTitle ? titleRaw : '';
+            const description = showDescription ? descriptionRaw : '';
+             const category = art.sectionLabel || art.section || 'Artwork';
+
+            imgEl.alt = titleRaw || 'Artwork image';
+
+             titleEl.textContent = title;
+                   titleEl.hidden = !title;
+                   headerTitleEl.textContent = title || 'Artwork';
+             descEl.textContent = description;
+                   descEl.hidden = !description;
+             catEl.textContent = category;
+           };
+
+           const open = (items, index) => {
+             if (!items || !items.length) return;
+             currentItems = items;
+             currentIndex = Math.max(0, Math.min(index || 0, currentItems.length - 1));
+             renderCurrent();
+
+             root.classList.add('is-open');
+             root.setAttribute('aria-hidden', 'false');
+             document.body.classList.add('overflow-hidden');
+             closeBtn.focus();
+           };
+
+           const close = () => {
+             root.classList.remove('is-open');
+             root.setAttribute('aria-hidden', 'true');
+             document.body.classList.remove('overflow-hidden');
+           };
+
+           const next = () => {
+             if (!currentItems.length) return;
+             currentIndex = (currentIndex + 1) % currentItems.length;
+             renderCurrent();
+           };
+
+           const prev = () => {
+             if (!currentItems.length) return;
+             currentIndex = (currentIndex - 1 + currentItems.length) % currentItems.length;
+             renderCurrent();
+           };
+
+           closeBtn.addEventListener('click', close);
+           nextBtn.addEventListener('click', next);
+           prevBtn.addEventListener('click', prev);
+           root.addEventListener('click', (event) => {
+             if (event.target === root || event.target.classList.contains('lightbox-backdrop')) {
+               close();
+             }
            });
-         });
-         
+           document.addEventListener('keydown', (event) => {
+             if (!root.classList.contains('is-open')) return;
+             if (event.key === 'Escape') close();
+             if (event.key === 'ArrowRight') next();
+             if (event.key === 'ArrowLeft') prev();
+           });
+
+           return { open };
+         })();
       </script>
       <script>
          var props = {"izmr7ax":{"classactive":"tab-active","selectortab":"aria-controls"}};
@@ -311,20 +242,29 @@
              const contentContainer = document.getElementById('dynamic-content');
              
              // Build tab data with an "All" tab first, then section tabs with content.
-             const tabsData = [{
-               id: 'all',
-               label: 'All',
-               artworks: data.artworks
-             }];
+                   const tabsData = [{
+                      id: 'all',
+                      label: 'All',
+                      artworks: data.artworks.map(artwork => {
+                         const matchedSection = (data.sections || []).find(section => section.id === artwork.section);
+                         return {
+                            ...artwork,
+                            sectionLabel: matchedSection ? matchedSection.label : artwork.section
+                         };
+                      })
+                   }];
 
              (data.sections || []).forEach(section => {
                const sectionArtworks = data.artworks.filter(art => art.section === section.id);
                if (sectionArtworks.length === 0) return; // Skip empty sections
-               tabsData.push({
-                 id: section.id,
-                 label: section.label,
-                 artworks: sectionArtworks
-               });
+                      tabsData.push({
+                         id: section.id,
+                         label: section.label,
+                         artworks: sectionArtworks.map(artwork => ({
+                            ...artwork,
+                            sectionLabel: section.label
+                         }))
+                      });
              });
 
              tabsData.forEach((section, index) => {
@@ -353,24 +293,39 @@
                grid.className = 'simple-image-grid';
                
                // Add artworks to grid
-               section.artworks.forEach(artwork => {
+                      section.artworks.forEach((artwork, artworkIndex) => {
                  const item = document.createElement('div');
                  item.className = 'image-item';
                  
                  const img = document.createElement('img');
                  img.src = artwork.path;
-                 img.alt = artwork.title || artwork.filename;
+                  const showTitle = artwork.displayTitle !== false;
+                  const rawTitle = (artwork.title && artwork.title.trim()) || '';
+                  const rawMedium = (artwork.medium && artwork.medium.trim()) || '';
+                  img.alt = rawTitle || 'Artwork image';
                  img.className = 'grid-image';
+                         img.loading = 'lazy';
+                         img.tabIndex = 0;
+                         img.setAttribute('role', 'button');
+                  img.setAttribute('aria-label', `Open ${rawTitle || 'artwork'} in full view`);
+                         img.addEventListener('click', () => artLightbox.open(section.artworks, artworkIndex));
+                         img.addEventListener('keydown', (event) => {
+                            if (event.key === 'Enter' || event.key === ' ') {
+                               event.preventDefault();
+                               artLightbox.open(section.artworks, artworkIndex);
+                            }
+                         });
                  
                  const caption = document.createElement('p');
                  caption.className = 'image-caption';
                  
                  // Build caption from available metadata (no filename fallback)
-                 let captionText = artwork.title || '';
-                 if (artwork.medium) {
+                         let captionText = showTitle ? rawTitle : '';
+                         if (showTitle && rawMedium) {
                    captionText += (captionText ? ' - ' : '') + artwork.medium;
                  }
                  caption.textContent = captionText;
+                         caption.hidden = !captionText;
                  
                  item.appendChild(img);
                  item.appendChild(caption);
