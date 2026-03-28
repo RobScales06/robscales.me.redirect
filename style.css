@@ -3150,6 +3150,60 @@ video {
 	color: rgb(203 213 225 / 1);
 }
 
+.video-embed-wrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	margin-top: 1rem;
+	border-radius: 0.75rem;
+	overflow: hidden;
+	border: 1px solid rgb(255 255 255 / 0.12);
+	background-color: rgb(2 6 23 / 0.6);
+}
+
+.video-embed-wrapper iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.interview-feature-section {
+	padding-top: 1.25rem;
+}
+
+.interview-feature-card {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+}
+
+.interview-feature-copy {
+	max-width: 52ch;
+}
+
+.interview-feature-video {
+	width: 100%;
+}
+
+@media (min-width: 900px) {
+	.interview-feature-card {
+		grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+		align-items: start;
+		column-gap: 2rem;
+	}
+
+	.interview-feature-video {
+		justify-self: end;
+		width: min(100%, 760px);
+	}
+
+	.interview-feature-video .video-embed-wrapper {
+		margin-top: 0.25rem;
+	}
+}
+
 .contact-header {
 	display: flex;
 	align-items: center;
